@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" id="themestyle" href="css/light.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R5ZHFSF72J"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-R5ZHFSF72J');
+</script>
+    
+    <title>GetTechno | Accueil</title> 
+</head>
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="img/logo.PNG">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">GetTechno 2</span>
+                    <span class="profession">Unblock The WEB</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+        
+        <div class="menu-bar">
+            <div class="menu">
+                <li class="search-box">
+                    <i class='bx bx-search icon'></i>
+                    <div class="search">
+                    <form>
+                        <input id="searchInput" class="input-bar" placeholder="Recherchez ici...">
+                    </form>
+                </div>
+                </li>
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="index.html">
+                            <i class='bx bx-home-alt icon' ></i>
+                            <span class="text nav-text">Accueil</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="games.html">
+                            <i class='bx bx-game icon' ></i>
+                            <span class="text nav-text">Jeux</span>
+                        </a>
+                    </li>
+                    
+                    <li class="nav-link">
+                        <a href="apps.html">
+                            <i class='bx bx-mobile-landscape icon'></i>
+                            <span class="text nav-text">Apps</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="cloud.html">
+                            <i class='bx bx-cloud icon' ></i>
+                            <span class="text nav-text">Cloud</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="tchat.html">
+                            <i class='bx bx-chat icon'></i>
+                            <span class="text nav-text">Tchat</span>
+                        </a>
+                    </li>
+                
+
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="nav-link">
+                    <a href="https://github.com/AldessScratch/GetTechno-2">
+                        <i class='bx bxl-github icon'></i>
+                        <span class="text nav-text">Github</span>
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="info.html">
+                        <i class='bx bx-info-circle icon'></i>
+                        <span class="text nav-text">Infos</span>
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="settings.html">
+                        <i class='bx bx-cog icon' ></i>
+                        <span class="text nav-text">Paramètres</span>
+                    </a>
+                </li>
+                
+            </div>
+        </div>
+
+    </nav>
+
+    <section class="home">
+        <div class="text">Accueil</div>
+        <div class="widget">
+            <div class="widget1 back">
+                <h5>Bienvenue sur GetTechno</h5>
+                <div class="username">
+                    <img src="./img/user.png" alt="userimage">
+                    <h8><grade id="grade"></grade><vip id="vip"></vip></h8>
+                    <user id="username">Guest</user>
+                </div>
+            </div>
+            <div class="widget1">
+                <div class="datetime">
+                   <div class="time"></div>
+                    <div class="date"></div>
+                </div>
+            </div>
+            <a href="./img/trailer.mp4"><div class="widgetvideo"></div></a>
+            <div class="widget2">
+                <h2>Actualités</h2>
+                <h3>18/03/23 : GetTechno Cloud is live</h3>
+                <h3>18/03/23 : Nouvelles apps</h3>
+                <h3>17/03/23 : Bouton login dans les paramètres</h3>
+                
+            </div>
+        </div>
+        <br>
+        <div class="footer">
+            <div class="footer-text">GetTechno-V2/main 43bq263 &copy; GetTechno 2023</div>
+        </div>
+    </section>
+
+    <script src="./js/script.js"></script>
+    <script src="./uv/uv.bundle.js"></script>
+    <script src="./uv/uv.config.js"></script>
+    <script src="./index.js"></script>
+    <script src="./js/time.js"></script>
+    <script>
+        if (localStorage.getItem("theme")===null){
+            localStorage.setItem("theme", "light")
+        }
+        document.getElementById("themestyle").setAttribute("href", `css/${localStorage.getItem("theme")}.css`);
+        toggle.addEventListener("click" , () =>{
+    sidebar.classList.toggle("close");
+})
+
+    </script>
+</body>
+</html>
