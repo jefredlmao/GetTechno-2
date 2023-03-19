@@ -1,4 +1,4 @@
-<p align="center"><img src="https://languefrancaise.cf/img/logo.PNG" height="200">
+<p align="center"><img src="https://useincog.tk/img/logo.PNG" height="200">
 </p>
 
 <h1 align="center">GetTechno</h1>
