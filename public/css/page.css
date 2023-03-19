@@ -523,13 +523,13 @@ header .image-text .profession{
     display: flex;
 }
 .cards .android{
-    background-image: url("../img/cloud/android.jpg");
+    background-image: url("../img/cloud/playstore.jpg");
 }
 .cards .roblox{
     background-image: url("../img/cloud/roblox.JPG");
 }
 .cards .stumble{
-    background-image: url("../img/cloud/stumble.PNG");
+    background-image: url("../img/cloud/stumble.jpg");
 }
 .cards .callof{
     background-image: url("../img/cloud/callof.JPG");
@@ -554,12 +554,6 @@ header .image-text .profession{
 }
 .cards .aptoide{
     background-image: url("../img/cloud/aptoide.jpg");
-}
-.cards .hill{
-    background-image: url("../img/cloud/hill.jpg");
-}
-.cards .block{
-    background-image: url("../img/cloud/block.jpg");
 }
 .cards .pubg{
     background-image: url("../img/cloud/pubg.jpg");
@@ -589,10 +583,33 @@ header .image-text .profession{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 250px;
-    width: 250px;
+    height: 200px;
+    border-radius: 50%;
 }
 .ngg p {
     padding-left: 100px;
     padding-right: 100px;
+}
+
+.classif {
+    width: 90%;
+    margin-left: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.classif h2 {
+    margin-left: 18px;
+    margin-bottom: 18px;
+    border-radius: 15px;
+    margin-right: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--widget-text);
+    background-color: var(--widget-color);
+    box-shadow: 4px 3px 8px 1px #6d6d6d33;
+  	-webkit-box-shadow: 4px 3px 8px 1px #6d6d6d33;
 }

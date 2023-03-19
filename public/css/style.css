@@ -277,7 +277,7 @@ header .image-text .profession{
     background-size: cover;
  }
 
- .datetime .time {
+ .datetime .timetext {
     padding-top: 25px;
     padding-left: 25px;
     color: var(--widget-text);
@@ -285,8 +285,9 @@ header .image-text .profession{
     font-weight: 700;
  }
 
- .datetime .date {
-    padding: 25px;
+ .datetime .datetext {
+    padding-left: 25px;
+    padding-top: 15px;
     color: var(--widget-text);
     font-size: 23px;
  }
