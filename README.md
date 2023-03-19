@@ -15,3 +15,4 @@
 - Caracal.js (Creator of Ultraviolet)
 - Divide (Creator of TOMP)
 - 3kh0 for most of the games
+- Pix4rt for Logo and Trailer
