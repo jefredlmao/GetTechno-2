@@ -81,7 +81,12 @@
                             <span class="text nav-text">Tchat</span>
                         </a>
                     </li>
-                
+                    <li class="nav-link">
+                        <a href="bot.html">
+                            <i class='bx bx-bot icon'></i>
+                            <span class="text nav-text">GetTechno AI</span>
+                        </a>
+                    </li>
 
                 </ul>
             </div>
@@ -114,7 +119,7 @@
     <section class="home">
         <div class="text">Accueil</div>
         <div class="widget">
-            <div class="widget1 back">
+            <div class="widget1 back" id="stylebg" style="background-image: url('./img/bg/1.jpg')">
                 <h5>Bienvenue sur GetTechno</h5>
                 <div class="username">
                     <h5><i class='bx bx-user'></i></h5>
@@ -124,17 +129,14 @@
             </div>
             <div class="widget1">
                 <div class="datetime">
-                    <div class="timetext"><i class='bx bx-time'></i> <div class="time"></div></div>
+                    <div class="timetext"><i class='bx bx-time'></i><div class="time"></div></div>
                     <div class="datetext"><div class="date"></div></div>
                 </div>
             </div>
             <a href="./img/trailer.mp4"><div class="widgetvideo"></div></a>
             <div class="widget2">
-                <h2>Actualités</h2>
-                <h3>18/03/23 : Classification des apps <br> et jeux et ajouts des icons partout</h3>
-                <h3>18/03/23 : Les text boxes des apps sont transparentes</h3>
-                <h3>18/03/23 : GetTechno Cloud is live</h3>
-                <h3>18/03/23 : Nouvelles apps</h3>
+                <h2>Changements</h2>
+                <h3>20/03/23 : Nouveau theme, changement du système des iframes, bouton login auto, fond d'écran adapté au thème et ajout de intégration WidgetBot avec Discord</h3>
             </div>
         </div>
         <br>
@@ -149,6 +151,8 @@
     <script src="./index.js"></script>
     <script src="./js/time.js"></script>
     <script>
+        document.getElementById("stylebg").style="background-image: url('./img/bg/" + localStorage.getItem('theme') + ".jpg')"
+
         if (localStorage.getItem("theme")===null){
             localStorage.setItem("theme", "light")
         }

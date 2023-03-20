@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/iframe.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R5ZHFSF72J"></script>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-R5ZHFSF72J');
+</script>
+    <title>GetTechno | Iframe page</title> 
+</head>
+<body>
+    <div class="iframe">
+        <iframe id="iframeurl" src="" style="border: 0; height: 100vh; left: 0; position: absolute; top: 0; width: 100%;"></iframe>
+        <div class="float">
+            <a href="./index.html"><i class='bx bxl-google'></i></a>
+            <a id="external" href=""><i class='bx bx-link-external'></i></a>
+        
+        </div>
+        <script>
+            document.getElementById("iframeurl").src=(localStorage.getItem('iframeurl'))
+            document.getElementById("external").href=(localStorage.getItem('iframeurl'))
+        </script>
+    </div>
+    
+</body>
+</html>

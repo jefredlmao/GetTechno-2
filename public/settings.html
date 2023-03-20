@@ -80,6 +80,12 @@
                             <span class="text nav-text">Tchat</span>
                         </a>
                     </li>
+                    <li class="nav-link">
+                        <a href="bot.html">
+                            <i class='bx bx-bot icon'></i>
+                            <span class="text nav-text">GetTechno AI</span>
+                        </a>
+                    </li>
                     
 
                 </ul>
@@ -114,20 +120,31 @@
         <div class="text">Paramètres</div>
         <br>
         <div class="parametre">
-            <button class="reset" onclick="localStorage.removeItem('nickname')">Réinitialiser son nom d'utilisateur</button>
+            <button class="reset" onclick="localStorage.setItem('nickname', 'Guest')">Réinitialiser son nom d'utilisateur</button>
             <br>
             <br>
             <a href="./autres.html"><button class="reset">Autres</button></a>
             <br>
             <br>
-            <button class="reset" onclick="setusername()">Login</button>
+            <button id="resetusername" class="reset" onclick="setusername(); checkbutton()">Login</button>
+            <script>
+                checkbutton()
+                function checkbutton(){
+                        if (localStorage.getItem('nickname')==="Guest"){
+                        document.getElementById("resetusername").innerHTML = "Login"
+                    }else{
+                        document.getElementById("resetusername").innerHTML = localStorage.getItem('nickname')
+                    }   
+                } 
+            </script>
              <br>
              <br>
              <h4>Choisir un theme :</h4>
              <select id="themeSelect">
                 <option value="light">Clair</option>
                 <option value="dark">Sombre</option>
-                <option value="pink">Rose</option>
+                <option value="pink">Rose accentué</option>
+                <option value="bleu">Bleu accentué</option>
                 <option value="orange">Noir et orange</option>
                 <option value="minuit">Minuit</option>
              </select>
