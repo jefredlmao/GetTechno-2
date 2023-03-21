@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/page.css">
     <link rel="stylesheet" id="themestyle" href="css/light.css">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-R5ZHFSF72J"></script>
@@ -80,13 +80,6 @@
                             <span class="text nav-text">Tchat</span>
                         </a>
                     </li>
-                    <li class="nav-link">
-                        <a href="bot.html">
-                            <i class='bx bx-bot icon'></i>
-                            <span class="text nav-text">GetTechno AI</span>
-                        </a>
-                    </li>
-                    
 
                 </ul>
             </div>
@@ -121,9 +114,6 @@
         <br>
         <div class="parametre">
             <button class="reset" onclick="localStorage.setItem('nickname', 'Guest')">Réinitialiser son nom d'utilisateur</button>
-            <br>
-            <br>
-            <a href="./autres.html"><button class="reset">Autres</button></a>
             <br>
             <br>
             <button id="resetusername" class="reset" onclick="setusername(); checkbutton()">Login</button>
@@ -169,15 +159,31 @@
                 }
                 initThemeSelector();
              </script>
+             <br>
+             <br>
+             <h4>Ouvrir une URL :</h4>
+             <div class="a">
+                <label for="URL" class="URL">URL :</label>
+                <input type="text" id="domUrlToOpen" name="urlToOpen" size="150" value="https://"></input>
+                <button onclick="getValueInput()">Go To</button>
+                <script>
+                    const getValueInput = () =>{
+                        var urlInputValue = document.getElementById("domUrlToOpen").value;
+                    open(urlInputValue, "_self")
+                    }
+                </script>
+              </div>
         </div>
         <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+        <div class="cards">
+            <a href="https://167.71.43.43/"><div class="card p croxy">
+                <h2 class="white">CroxyProxy</h2>
+            </div></a>
+            <a href="https://passioneffort.com"><div class="card p incognito">
+                <h2 class="white">Incognito</h2>
+            </div></a>
+            
+        </div>    
         <br>
        <div class="footer">
         <div class="footer-text">GetTechno-V2/main 43bq263 &copy; GetTechno 2023</div>
