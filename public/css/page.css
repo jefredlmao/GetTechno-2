@@ -233,6 +233,7 @@ header .image-text .profession{
     align-items: flex-end;
     background-size: cover;
     background-position: center;
+    background-color: white;
 }
 
 .cards .card h2 {
@@ -404,17 +405,10 @@ header .image-text .profession{
 .cards .krunker {
     background-image: url("../img/games/krunker.png");
 }
-.a {
-    margin-top: 20px;
-    margin-left: 50px;
-}
 
 .a #domUrlToOpen {
     height: 30px;
     width: 300px;
-}
-.console-container {
-    margin-left: 50px;
 }
 
 .a button {
@@ -431,23 +425,6 @@ header .image-text .profession{
     color: var(--widget-text)
 }
 
-.a #url-target {
-    height: 30px;
-    width: 300px;
-}
-
-.console-container {
-    margin-left: 50px;
-}
-.consolebody p{
-    color: var(--widget-text);
-}
-.bookmarklet {
-    margin-left: 50px;
-}
-.bookmarklet h3, p {
-    color: var(--widget-text);
-}
 .cards .ecoledirecte {
     background-image: url("../img/apps/ecoledirecte.png");
 }
@@ -561,6 +538,12 @@ header .image-text .profession{
 .cards .block{
     background-image: url("../img/games/block.jpg");
 }
+.cards .gartic{
+    background-image: url("../img/games/gartic.jpg");
+}
+.cards .slither{
+    background-image: url("../img/games/slither.jpg");
+}
 .ngg {
     display: flex;
     justify-content: center;
@@ -590,4 +573,69 @@ header .image-text .profession{
     background-color: var(--widget-color);
     box-shadow: 4px 3px 8px 1px #6d6d6d33;
   	-webkit-box-shadow: 4px 3px 8px 1px #6d6d6d33;
+}
+.parametre {
+    margin-left: 60px;
+}
+.parametre .reset{
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    color: var(--widget-text);
+    background-color: var(--widget-color);
+    box-shadow: 4px 3px 8px 1px #96969633;
+  	-webkit-box-shadow: 4px 3px 8px 1px #96969633;
+}
+.parametre h4 {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--widget-text);
+ }
+ 
+ .parametre input{
+     width: 500px;
+     border-radius: 20px;
+     padding: 5px;
+     border: 0;
+     box-shadow: 4px 3px 8px 1px #96969633;
+       -webkit-box-shadow: 4px 3px 8px 1px #96969633;
+     margin-right: 5px
+ }
+ .parametre select{
+     width: 300px;
+     border-radius: 20px;
+     padding: 5px;
+     border: 0;
+     box-shadow: 4px 3px 8px 1px #96969633;
+       -webkit-box-shadow: 4px 3px 8px 1px #96969633;
+ }
+ .parametre .setmdp{
+     border: none;
+     border-radius: 10px;
+     padding: 7px;
+     color: var(--widget-text);
+     background-color: var(--widget-color);
+     box-shadow: 4px 3px 8px 1px #96969633;
+       -webkit-box-shadow: 4px 3px 8px 1px #96969633;
+ }
+ .ngg .btn {
+    border-radius: 50px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 25px;
+    padding-left: 25px;
+    margin: 5px;
+    color: white;
+    background-color: black;
+    border: 0;
+    font-size: 20px;
+    box-shadow: 4px 3px 8px 1px #96969633;
+  	-webkit-box-shadow: 4px 3px 8px 1px #96969633;
+ }
+
+ .ngg {
+    margin-top:40vh ;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }

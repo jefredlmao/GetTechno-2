@@ -110,12 +110,10 @@
     </nav>
 
     <section class="home">
-        <widgetbot
-        server="1086990232349581434"
-        channel="1087008199363805345"
-        
-        ></widgetbot>
-    <script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
+        <iframe class="widgetbot" id="tchat" src=""></iframe>
+      <script>
+        document.getElementById("tchat").src="https://e.widgetbot.io/channels/1086990232349581434/1087008199363805345?username=" + (localStorage.getItem('nickname'))
+    </script>
     </section>
 
     <script src="./js/script.js"></script>

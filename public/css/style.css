@@ -349,9 +349,9 @@ video {
     padding-bottom: 20px;
 }
 
-widgetbot {
+.widgetbot {
     border: 0;
-    height: 100vh;
+    height: 98vh;
     width: 100%;
 }
 
@@ -359,18 +359,7 @@ widgetbot {
     margin-left: 60px;
     color: var(--widget-text);
 }
-.parametre {
-    margin-left: 60px;
-}
-.parametre .reset{
-    border: none;
-    border-radius: 10px;
-    padding: 10px;
-    color: var(--widget-text);
-    background-color: var(--widget-color);
-    box-shadow: 4px 3px 8px 1px #96969633;
-  	-webkit-box-shadow: 4px 3px 8px 1px #96969633;
-}
+
 .widget1 img{
     height: 40px;
     width: 40px;
@@ -379,36 +368,4 @@ widgetbot {
     margin-top: 20px;
     margin-bottom: 0px;
     size: 100%;
-}
-.parametre h4 {
-   font-size: 20px;
-   font-weight: 500;
-   color: var(--widget-text);
-}
-
-.parametre input{
-    width: 500px;
-    border-radius: 20px;
-    padding: 5px;
-    border: 0;
-    box-shadow: 4px 3px 8px 1px #96969633;
-  	-webkit-box-shadow: 4px 3px 8px 1px #96969633;
-    margin-right: 5px
-}
-.parametre select{
-    width: 300px;
-    border-radius: 20px;
-    padding: 5px;
-    border: 0;
-    box-shadow: 4px 3px 8px 1px #96969633;
-  	-webkit-box-shadow: 4px 3px 8px 1px #96969633;
-}
-.parametre .setmdp{
-    border: none;
-    border-radius: 10px;
-    padding: 7px;
-    color: var(--widget-text);
-    background-color: var(--widget-color);
-    box-shadow: 4px 3px 8px 1px #96969633;
-  	-webkit-box-shadow: 4px 3px 8px 1px #96969633;
 }

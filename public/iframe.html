@@ -24,12 +24,20 @@
         <div class="float">
             <a href="./index.html"><i class='bx bxl-google'></i></a>
             <a id="external" href=""><i class='bx bx-link-external'></i></a>
+            <a href="https://www.wikipedia.org"><i class='bx bxl-wikipedia'></i></a>
         
         </div>
         <script>
             document.getElementById("iframeurl").src=(localStorage.getItem('iframeurl'))
             document.getElementById("external").href=(localStorage.getItem('iframeurl'))
         </script>
+        <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
+            new Crate({
+              server: '1086990232349581434',
+              channel: '1087008199363805345',
+              username: localStorage.getItem('nickname')
+            })
+          </script>
     </div>
     
 </body>
