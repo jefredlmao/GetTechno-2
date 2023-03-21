@@ -536,7 +536,7 @@ header .image-text .profession{
     background-image: url("../img/cloud/pubg.jpg");
 }
 .cards .block{
-    background-image: url("../img/games/block.jpg");
+    background-image: url("../img/cloud/");
 }
 .cards .gartic{
     background-image: url("../img/games/gartic.jpg");
@@ -638,4 +638,7 @@ header .image-text .profession{
     display: flex;
     justify-content: center;
     flex-direction: column;
+}
+.cards .moomoo{
+    background-image: url("../img/games/moomoo.png");
 }

@@ -23,4 +23,5 @@ function setusername(){
         }else{
             localStorage.setItem('nickname', result)
         }
+        
 }

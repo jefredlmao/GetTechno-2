@@ -11,7 +11,8 @@ form.addEventListener('submit', async event => {
         else if (!(url.startsWith('https://') || url.startsWith('http://'))) url = 'http://' + url;
 
 
-        window.location.href = __uv$config.prefix + __uv$config.encodeUrl(url);
+        localStorage.setItem('iframeurl', __uv$config.prefix + __uv$config.encodeUrl(url))
+          window.location.href = "./iframe.html"
     });
 });
 
