@@ -13,11 +13,11 @@
 <body>
   <div class="ngg">
     <p>Le chargement d'une app peut prendre jusqu'a 30 secondes</p>
-    <br>
- <button
-    class="btn"
-    onclick="getNggGame('https://now.gg/play/aptoide/1440/aptoide');">Lancer Aptoide
-  </button>
+    <script>
+      setTimeout(() => {
+          document.onload = getNggGame('https://now.gg/play/aptoide/1440/aptoide');
+      }, 1000);
+    </script>
   </div>
 </body>
 

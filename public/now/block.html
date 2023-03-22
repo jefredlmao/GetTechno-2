@@ -13,11 +13,12 @@
 <body>
   <div class="ngg">
     <p>Le chargement d'une app peut prendre jusqu'a 30 secondes</p>
-    <br>
- <button
-    class="btn"
-    onclick="getNggGame('https://now.gg/play/blockman-go-studio/8913/blockman-go');">Lancer BlockMan Go
-  </button>
+    <script>
+      setTimeout(() => {
+          document.onload = getNggGame('https://now.gg/play/blockman-go-studio/8913/blockman-go');
+      }, 1000);
+    </script>
+
   </div>
 </body>
 
