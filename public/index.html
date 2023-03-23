@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" id="themestyle" href="css/light.css">
+    <link rel="stylesheet" id="themestyle" href="css/loader.css">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-R5ZHFSF72J"></script>
@@ -21,6 +22,9 @@
     <title>GetTechno | Accueil</title> 
 </head>
 <body>
+    <div id="preloader">
+        <p><i class='bx bxl-google'></i> GetTechno est cours de chargement</p>
+    </div>
     <nav class="sidebar close">
         <header>
             <div class="image-text">
@@ -65,7 +69,7 @@
                     
                     <li class="nav-link">
                         <a href="apps.html">
-                            <i class='bx bx-mobile-landscape icon'></i>
+                            <i class='bx bxs-grid icon'></i>
                             <span class="text nav-text">Apps</span>
                         </a>
                     </li>
@@ -130,8 +134,8 @@
             <a href="./img/trailer.mp4"><div class="widgetvideo"></div></a>
             <a href="./info.html"><div class="widget2">
                 <h2>Changements</h2>
-                <h3>22/03/23 : Chargement du mobile cloud auto, position du bouton de tchat fixé</h3>
-                <h3>21/03/23 : Crate WidgetBot, auto username, ajout du bouton Wikipedia, fix cloud mobile, nouveaux jeux</h3>
+                <h3>23/03/23 : Panic button changé, logo app modifié, nouvelle app, qualité des images réduite, <br> position du crate fixé, iframe fixé, écran de chargement</h3>
+                <h3>22/03/23 : Nouvelles apps cloud</h3>
             </div></a>
         </div>
         <br>
@@ -155,6 +159,13 @@
         toggle.addEventListener("click" , () =>{
     sidebar.classList.toggle("close");
 })
+
+    </script>
+    <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function(){
+            loader.style.display = "none"
+        })
 
     </script>
 </body>

@@ -27,7 +27,7 @@ body {
     padding: 10px 14px;
     background: var(--sidebar-color);
     transition: var(--tran-05);
-    z-index: 100;  
+    z-index: 1;  
 }
 .sidebar.close{
     width: 88px;
@@ -369,4 +369,27 @@ video {
     margin-top: 20px;
     margin-bottom: 0px;
     size: 100%;
+}
+
+#preloader {
+    background-color: #000;
+    background-image: url("../img/loading.GIF");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 15%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#preloader p {
+    color: white;
+    position: fixed;
+  left: 50%;
+  bottom: 20px;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
 }
