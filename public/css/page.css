@@ -536,7 +536,7 @@ header .image-text .profession{
     background-image: url("../img/cloud/pubg.jpg");
 }
 .cards .block{
-    background-image: url("../img/cloud/");
+    background-image: url("../img/cloud/block.jpg");
 }
 .cards .gartic{
     background-image: url("../img/games/gartic.jpg");
@@ -641,4 +641,37 @@ header .image-text .profession{
 }
 .cards .moomoo{
     background-image: url("../img/games/moomoo.png");
+}
+.cards .among{
+    background-image: url("../img/cloud/among.jpeg");
+}
+.cards .cut{
+    background-image: url("../img/cloud/cut.png");
+}
+.cards .cut2{
+    background-image: url("../img/cloud/cut2.png");
+}
+.cards .fifa{
+    background-image: url("../img/cloud/fifa.jpg");
+}
+.cards .granny{
+    background-image: url("../img/cloud/granny.png");
+}
+.cards .raid{
+    background-image: url("../img/cloud/raid.jpeg");
+}
+.cards .pixel3d{
+    background-image: url("../img/cloud/pixel.jpeg");
+}
+.cards .statesurvi{
+    background-image: url("../img/cloud/state.jpeg");
+}
+.cards .brain{
+    background-image: url("../img/cloud/brain.png");
+}
+.cards .hill{
+    background-image: url("../img/cloud/hill.png");
+}
+.cards .hill2{
+    background-image: url("../img/cloud/hill1.png");
 }
