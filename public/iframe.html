@@ -31,7 +31,14 @@
             document.getElementById("iframeurl").src=(localStorage.getItem('iframeurl'))
             document.getElementById("external").href=(localStorage.getItem('iframeurl'))
         </script>
-        
+        <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
+            new Crate({
+              server: '1086990232349581434',
+              channel: '1087008199363805345',
+              username: localStorage.getItem('nickname'),
+              location: [-300, 20]
+            })
+          </script>
     </div>
     
 </body>
