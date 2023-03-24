@@ -7,6 +7,7 @@ checktheusername()
 
 function checktheusername(){
     if (localStorage.getItem('nickname')===null){
+        localStorage.setItem('nickname', "Guest")
         document.getElementById("username").innerHTML = "Guest"
     }else{
         document.getElementById("username").innerHTML = localStorage.getItem('nickname')
