@@ -260,16 +260,11 @@ header .image-text .profession{
     color: #e63939;
  }
 
- .widget1 h8 vip{
-    color: #bbff6e;
- }
-
  .widget1 h3 {
     padding-left: 25px;
     color: var(--widget-text);
     font-size: 15px;
     font-weight: 400;
-    
  }
 
  .back {
@@ -361,15 +356,6 @@ video {
     color: var(--widget-text);
 }
 
-.widget1 img{
-    height: 40px;
-    width: 40px;
-    border-radius: 100%;
-    margin-left: 25px;
-    margin-top: 20px;
-    margin-bottom: 0px;
-    size: 100%;
-}
 
 #preloader {
     background-color: #000;
@@ -380,7 +366,7 @@ video {
     height: 100vh;
     width: 100%;
     position: fixed;
-    z-index: 100;
+    z-index: 200;
     display: flex;
     justify-content: center;
     flex-direction: column;

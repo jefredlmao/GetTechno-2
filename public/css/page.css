@@ -446,7 +446,6 @@ header .image-text .profession{
 .cards .diep{
     background-image: url("../img/games/diep.png");
 }
-
 .widget{
     margin-top: 20px;
     display: flex;
@@ -459,42 +458,58 @@ header .image-text .profession{
     height: 220px;
     width: 80%;
     border-radius: 25px;
-    background-color: white;
+    background-color: var(--widget-color);
     box-shadow: 4px 3px 8px 1px #96969633;
   	-webkit-box-shadow: 4px 3px 8px 1px #96969633;
 }
+
+ .widget1 h2 {
+    padding: 25px;
+    color: white;
+    font-size: 23px;
+    
+ }
 
  .widget1 h5 {
     padding-left: 25px;
     padding-top: 25px;
     padding-bottom: 25px;
     padding-right: 10px;
-    color: black;
-    font-size: 28px;
+    color: white;
+    font-size: 23px;
+ }
+ .widget1 h8 {
+    padding-left: 15px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 10px;
+    color: white;
+    font-size: 23px;
+    font-weight: 600;
  }
 
- .widget1 h6 {
+ .widget1 user {
+    padding-top: 25px;
+    color: white;
+    font-size: 23px;
+    font-weight: 600;
+ }
+
+ .widget1 h8 grade{
+    color: #e63939;
+ }
+
+ .widget1 h3 {
     padding-left: 25px;
-    padding-top: 5px;
-    padding-right: 10px;
-    color: black;
+    color: var(--widget-text);
     font-size: 15px;
-    font-weight: 300;
+    font-weight: 400;
  }
 
  .back {
-    background-image: url("../img/cloud/cloud.PNG");
-    background-size: 55%;
-    background-repeat: no-repeat;
-    background-position: right;
+    background-size: cover;
  }
 
- .back2 {
-    background-image: url("../img/trailer.jpg");
-    background-size: 55%;
-    background-repeat: no-repeat;
-    background-position: right;
- }
  .username {
     margin-top: 30px;
     display: flex;

@@ -110,13 +110,15 @@
 
     </nav>
     <section class="home">
-        <div class="text">Mobile Cloud</div>
         <div class="widget">
-            <div class="widget1 back">
+            <div class="widget1 back" id="stylebg" style="background-image: url('./img/bg/1.jpg')">
                 <h5>Mobile Cloud</h5>
-                <h6>Tous vos jeux et apps </h6>
-                <h6>mobiles préférés sont maintenant</h6>
-                <h6>disponibles sur GetTechno</h6>
+                <div class="username">
+                    <h5><i class='bx bx-user'></i></h5>
+                    <h8></i><grade id="grade"></grade><vip id="vip"></vip></h8>
+                    </i><user id="username">Guest</user>
+                    <h5><i class='bx bx-edit' onclick="setusername(); window.location.href = 'index.html'"></i></h5>
+                </div>
             </div>
             
         </div>
@@ -176,7 +178,7 @@
             </div>            
         </div>
         <div class="footer">
-            <div class="footer-text">GetTechno-V2/main 43bq263 &copy; GetTechno 2023</div>
+            <div class="footer-text">GetTechno-V2/main &copy; GetTechno 2023</div>
         </div>
     </section>
     <script src="./js/script.js"></script>
@@ -184,6 +186,8 @@
     <script src="./uv/uv.config.js"></script>
     <script src="./index.js"></script>
     <script>
+        document.getElementById("stylebg").style="background-image: url('./img/bg/" + localStorage.getItem('theme') + ".jpg')"
+
         if (localStorage.getItem("theme")===null){
             localStorage.setItem("theme", "light")
         }

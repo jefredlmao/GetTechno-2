@@ -120,7 +120,7 @@
                 <h5>Bienvenue sur GetTechno</h5>
                 <div class="username">
                     <h5><i class='bx bx-user'></i></h5>
-                    <h8></i><grade id="grade"></grade><vip id="vip"></vip></h8>
+                    <h8></i><grade id="grade"></grade></h8>
                     </i><user id="username">Guest</user>
                     <h5><i class='bx bx-edit' onclick="setusername(); window.location.href = 'index.html'"></i></h5>
                 </div>
@@ -134,13 +134,13 @@
             <a href="./img/trailer.mp4"><div class="widgetvideo"></div></a>
             <a href="./info.html"><div class="widget2">
                 <h2>Changements</h2>
-                <h3>23/03/23 : Panic button changé, logo app modifié, nouvelle app, qualité des images réduite, <br> position du crate fixé, iframe fixé, écran de chargement</h3>
-                <h3>22/03/23 : Nouvelles apps cloud</h3>
+                <h3>24/03/23 : Banières modifiées, temps de chargement custom, panic button rouge, auto crash</h3>
+                <h3>23/03/23 : Panic button changé, logo app modifié, nouvelle app, qualité des images réduite...</h3>
             </div></a>
         </div>
         <br>
         <div class="footer">
-            <div class="footer-text">GetTechno-V2/main 43bq263 &copy; GetTechno 2023</div>
+            <div class="footer-text">GetTechno-V2/main &copy; GetTechno 2023</div>
         </div>
     </section>
 
@@ -163,9 +163,9 @@
     </script>
     <script>
         var loader = document.getElementById("preloader");
-        window.addEventListener("load", function(){
-            loader.style.display = "none"
-        })
+        setTimeout(() => {
+            loader.style.display = "none";
+      }, 2000);
 
     </script>
 </body>
