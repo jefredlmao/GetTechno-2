@@ -21,26 +21,40 @@
 <body>
     <div class="iframe">
         <iframe id="iframeurl" src="" style="border: 0; height: 100vh; left: 0; position: absolute; top: 0; width: 100%;"></iframe>
-        <div class="float">
-            <a href="./index.html"><i class='bx bxl-google'></i></a>
+        <div class="DraggableDiv" id="DraggableDiv1">
+            <a id="DraggableDiv1_Header"><i class='bx bx-move move'></i></a>
             <a id="external" href=""><i class='bx bx-link-external'></i></a>
-            <a href="https://www.ecoledirecte.com/login"><i class='bx bxs-error-alt panic'></i></a>
+            <a href="./games.html"><i class='bx bx-joystick'></i></a>
+            <a href="./apps.html"><i class='bx bxs-grid'></i></a>
+            <a href="./settings.html"><i class='bx bx-cog'></i></a>
+            <a href="https://mathematiquesfacile.netlify.app"><i class='bx bxs-error-alt panic'></i></a>
         
         </div>
+        <script>
+            
+        </script>
         <script>
             document.getElementById("iframeurl").src=(localStorage.getItem('iframeurl'))
             document.getElementById("external").href=(localStorage.getItem('iframeurl'))
         </script>
         <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
-            new Crate({
+            const discord = new Crate({
               server: '1086990232349581434',
               channel: '1087008199363805345',
               username: localStorage.getItem('nickname'),
-            location: [10, -150],
-              glyph: ['./img/widgetbot.png', '100%']
+              glyph: ['./img/widgetbot.png', '100%'],
+              location: [10, -150],
             })
+            
           </script>
+        </div>
     </div>
-    
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="./js/draggable-div-with-touch.js" /></script>
+
+    <script>
+        $('.DraggableDiv').draggableTouch();
+    </script>
+
 </body>
 </html>

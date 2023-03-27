@@ -22,8 +22,13 @@
     <title>GetTechno | Accueil</title> 
 </head>
 <body>
-    <div id="preloader">
-        <p><i class='bx bxl-google'></i> GetTechno est en cours de chargement...</p>
+    <div class="intro">
+        <h1 class="logo-header">
+            <span class="logo">Get</span><span class="logo">Techno</span><span class="logo">
+        </h1>
+        <h2 class="logo-ok">
+            <span class="logo">Unblock The WEB</span>
+        </h2>
     </div>
     <nav class="sidebar close">
         <header>
@@ -53,8 +58,8 @@
                 </li>
 
                 <ul class="menu-links">
-                    <li class="nav-link">
-                        <a href="index.html">
+                    <li class="nav-link hover">
+                        <a href="index.html" class="hover">
                             <i class='bx bx-home-alt icon' ></i>
                             <span class="text nav-text">Accueil</span>
                         </a>
@@ -116,7 +121,7 @@
     <section class="home">
         <div class="text">Accueil</div>
         <div class="widget">
-            <div class="widget1 back" id="stylebg" style="background-image: url('./img/bg/1.jpg')">
+            <div class="widget1 back" id="stylebg" style="background-image: url('./img/bg/light.jpg')">
                 <h5>Bienvenue sur GetTechno</h5>
                 <div class="username">
                     <h5><i class='bx bx-user'></i></h5>
@@ -132,10 +137,10 @@
                 </div>
             </div>
             <a href="./img/trailer.mp4"><div class="widgetvideo"></div></a>
-            <a href="./info.html"><div class="widget2">
+            <a href="./info.html"><div class="widget2" id="stylebg" style="background-image: url('./img/bg/1.jpg')">
                 <h2>Changements</h2>
+                <h3>27/03/23 : Affichage de la page selectionné, nouvelles apps, nouveaux jeux, bouton flottant modifié et intro</h3>
                 <h3>24/03/23 : Banières modifiées, temps de chargement custom, panic button rouge, auto crash</h3>
-                <h3>23/03/23 : Panic button changé, logo app modifié, nouvelle app, qualité des images réduite...</h3>
             </div></a>
         </div>
         <br>
@@ -149,6 +154,7 @@
     <script src="./uv/uv.config.js"></script>
     <script src="./index.js"></script>
     <script src="./js/time.js"></script>
+    <script src="./js/intro.js"></script>
     <script>
         document.getElementById("stylebg").style="background-image: url('./img/bg/" + localStorage.getItem('theme') + ".jpg')"
 
@@ -165,7 +171,7 @@
         var loader = document.getElementById("preloader");
         setTimeout(() => {
             loader.style.display = "none";
-      }, 2000);
+      }, 1500);
 
     </script>
 </body>

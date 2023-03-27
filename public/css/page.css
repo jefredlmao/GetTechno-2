@@ -166,13 +166,14 @@ header .image-text .profession{
     transition: var(--tran-03);
 }
 
-.sidebar li a:hover{
+.sidebar li .hover{
     background-color: var(--primary-color);
 }
-.sidebar li a:hover .icon,
-.sidebar li a:hover .text{
+.sidebar li .hover .icon,
+.sidebar li .hover .text{
     color: var(--sidebar-color);
 }
+
 
 .sidebar .menu-bar{
     height: calc(100% - 55px);
@@ -515,7 +516,7 @@ header .image-text .profession{
     display: flex;
 }
 .cards .android{
-    background-image: url("../img/cloud/playstore.jpg");
+    background-image: url("../img/cloud/android.jpg");
 }
 .cards .roblox{
     background-image: url("../img/cloud/roblox.JPG");
@@ -681,6 +682,27 @@ header .image-text .profession{
 .cards .statesurvi{
     background-image: url("../img/cloud/state.jpeg");
 }
-.cards .instagram{
-    background-image: url("../img/apps/instagram.jpg");
+.cards .visual{
+    background-image: url("../img/apps/vscode.png");
+}
+.cards .sound{
+    background-image: url("../img/apps/soundcloud.jpg");
+}
+.cards .telegram{
+    background-image: url("../img/apps/telegram.png");
+}
+.cards .gmail{
+    background-image: url("../img/apps/gmail.jpg");
+}
+.cards .analytics{
+    background-image: url("../img/apps/analytics.png");
+}
+.cards .nightflix{
+    background-image: url("../img/apps/nightflixx.png");
+}
+.cards .angry{
+    background-image: url("../img/games/angry.png");
+}
+.cards .stabfish{
+    background-image: url("../img/games/stabfish.png");
 }

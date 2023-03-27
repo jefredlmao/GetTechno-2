@@ -5,25 +5,31 @@
     
 }
 
-.iframe .float {
+.iframe .DraggableDiv {
     margin-top: 50px;
     background-color: #1f1e1e;
-    width: 130px;
+    width: 230px;
     height: 40px;
-    position: fixed;
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 100;
     border-radius: 50px;
     box-shadow: 4px 3px 8px 1px #96969633;
   	-webkit-box-shadow: 4px 3px 8px 1px #96969633;
 }
 
-.iframe .float i {
+.iframe .DraggableDiv i {
     color: white;
     margin: 10px;
 }
 
-.iframe .float .panic {
+.iframe .DraggableDiv .panic {
     color: #ee5d5d;
+}
+
+.iframe .DraggableDiv .move {
+    color: #5d84ee;
+    cursor: move;
 }
