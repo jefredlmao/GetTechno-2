@@ -7,6 +7,7 @@ https://webincog.tk
 
 ## Features
 
+- PWA partially supported
 - Now.gg bypass
 - HTML5 games
 - Integrated proxy
