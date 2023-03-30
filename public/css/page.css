@@ -415,12 +415,14 @@ header .image-text .profession{
 }
 
 .a button {
-    border-radius: 50px;
-    padding: 8px;
     margin: 5px;
     color: rgb(0, 0, 0);
     background-color: #e7e5e5;
     border: 0;
+    border-radius: 15px;
+    padding: 7px;
+    color: var(--widget-text);
+    background-color: var(--widget-color);
     box-shadow: 4px 3px 8px 1px #96969633;
   	-webkit-box-shadow: 4px 3px 8px 1px #96969633;
 }
@@ -597,8 +599,8 @@ header .image-text .profession{
 }
 .parametre .reset{
     border: none;
-    border-radius: 10px;
-    padding: 10px;
+    border-radius: 15px;
+    padding: 8px;
     color: var(--widget-text);
     background-color: var(--widget-color);
     box-shadow: 4px 3px 8px 1px #96969633;
@@ -627,36 +629,6 @@ header .image-text .profession{
      box-shadow: 4px 3px 8px 1px #96969633;
        -webkit-box-shadow: 4px 3px 8px 1px #96969633;
  }
- .parametre .setmdp{
-     border: none;
-     border-radius: 10px;
-     padding: 7px;
-     color: var(--widget-text);
-     background-color: var(--widget-color);
-     box-shadow: 4px 3px 8px 1px #96969633;
-       -webkit-box-shadow: 4px 3px 8px 1px #96969633;
- }
- .ngg .btn {
-    border-radius: 50px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-right: 25px;
-    padding-left: 25px;
-    margin: 5px;
-    color: white;
-    background-color: black;
-    border: 0;
-    font-size: 20px;
-    box-shadow: 4px 3px 8px 1px #96969633;
-  	-webkit-box-shadow: 4px 3px 8px 1px #96969633;
- }
-
- .ngg {
-    margin-top:40vh ;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
 .cards .moomoo{
     background-image: url("../img/games/moomoo.png");
 }
@@ -713,4 +685,42 @@ header .image-text .profession{
 }
 .cards .snap{
     background-image: url("../img/apps/snapchat.png");
+}
+.cards .duckduckgo{
+    background-image: url("../img/apps/duckduckgo.png");
+}
+
+.iframe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.iframe .DraggableDiv {
+    top: 10px;
+    background-color: #1f1e1e;
+    width: 200px;
+    height: 40px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    border-radius: 50px;
+    box-shadow: 4px 3px 8px 1px #96969633;
+  	-webkit-box-shadow: 4px 3px 8px 1px #96969633;
+}
+
+.iframe .DraggableDiv i {
+    color: white;
+    margin: 10px;
+}
+
+.iframe .DraggableDiv .panic {
+    color: #ee5d5d;
+}
+
+.cards .imgbb{
+    background-image: url("../img/apps/imbgg.png");
 }
