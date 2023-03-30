@@ -7,9 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" id="themestyle" href="css/light.css">
+    <link rel="stylesheet" id="themestyle" href="css/loader.css">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-R5ZHFSF72J"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R5ZHFSF72J"></script>
+    <link rel="manifest" href="manifest.json">
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -18,7 +20,7 @@
   gtag('config', 'G-R5ZHFSF72J');
 </script>
     
-    <title>GetTechno | Info</title> 
+    <title>GetTechno | Accueil</title> 
 </head>
 <body>
     <nav class="sidebar close">
@@ -49,8 +51,8 @@
                 </li>
 
                 <ul class="menu-links">
-                    <li class="nav-link">
-                        <a href="menu.html">
+                    <li class="nav-link hover">
+                        <a href="menu.html" class="hover">
                             <i class='bx bx-home-alt icon' ></i>
                             <span class="text nav-text">Accueil</span>
                         </a>
@@ -62,7 +64,7 @@
                             <span class="text nav-text">Jeux</span>
                         </a>
                     </li>
-
+                    
                     <li class="nav-link">
                         <a href="apps.html">
                             <i class='bx bxs-grid icon'></i>
@@ -92,7 +94,7 @@
                     </a>
                 </li>
                 <li class="nav-link">
-                    <a href="info.html" class="hover">
+                    <a href="info.html">
                         <i class='bx bx-info-circle icon'></i>
                         <span class="text nav-text">Infos</span>
                     </a>
@@ -103,7 +105,6 @@
                         <span class="text nav-text">Paramètres</span>
                     </a>
                 </li>
-
                 
             </div>
         </div>
@@ -111,66 +112,30 @@
     </nav>
 
     <section class="home">
-        <div class="text">Infos</div>
-        <br>
-        <div class="part">
-            <h1>Credits</h1>
-            <br>
-            <p>Logo and Trailer - Pix4rt</p>
-            <p>Mobile Cloud - Now.gg</p>
-            <p>Now gg bypass - S-O-M-E-O-N-E</p>
-            <p>Proxy Ultraviolet - Titanium Network (Caracal.js)</p>
-            <p>Icons - Boxicons</p>
-            <p>Font - Google font</p>
-            <p>HTML5 games - 3kh0</p>
-            <p>Tchat - WidgetBot / Discord</p>
-            <br>
-            <br>
-            <h1>Historique des changements</h1>
-            <br>
-            <p>30/03/23 : PWA supporté, nouvelles apps, barre flottante modifié, intro premier lancement et nouveau jeu</p>
-            <p>29/03/23 : PWA supporté, catégories, nouvelles apps</p>
-            <p>28/03/23 : Nouvelles apps, barre flottante modifié, nouveaux themes, bords plus arrondis</p>
-            <p>27/03/23 : Affichage de la page selectionné, nouvelles apps, nouveaux jeux, bouton flottant modifié et intro</p>
-            <p>24/03/23 : Banières modifiées, temps de chargement custom, panic button rouge, auto crash</p>
-            <p>23/03/23 : Panic button changé, logo app modifié, nouvelle app, qualité des images réduite, position du crate fixé, iframe fixé, écran de chargement</p>
-            <p>22/03/23 : Nouvelles apps cloud</p>
-            <p>22/03/23 : Chargement du mobile cloud auto, position du bouton de tchat fixé</p>
-            <p>21/03/23 : Crate WidgetBot, auto username, ajout du bouton Wikipedia, fix cloud mobile, nouveaux jeux</p>
-            <p>20/03/23 : Nouveau theme, changement du système des iframes, bouton login auto, fond d'écran adapté au thème et ajout de intégration WidgetBot avec Discord</p>
-            <p>18/03/23 : Classification des apps et jeux</p>
-            <p>18/03/23 : Les text boxes des apps sont transparentes</p>
-            <p>18/03/23 : GetTechno Cloud is live</p>
-            <p>18/03/23 : Nouvelles apps</p>
-            <p>17/03/23 : Bouton login dans les paramètres</p>
-            <p>15/03/23 : Changement du fonctionnement du proxy et nouveau jeu</p>
-            <p>22/02/23 : Nouvelle app et jeu</p>
-            <p>18/02/23 : Qualité de toutes les images réduite pour améliorer la vitesse</p>
-            <p>18/02/23 : Nouveau système de thèmes</p>
-            <p>18/02/23 : Nouvelles apps et certaines apps deplacé dans la zone VIP</p>
-            <p>18/02/23 : CSS des pages et de la navbar séparé</p>
-            <p>18/02/23 : Options des apps et des jeux enlevées</p>
-            <p>16/02/23 : Page accueil apps et jeux responsive</p>
-            <p>14/02/23 : Ajout de Google Analytics</p>
-            <p>08/02/23 : Vidéo remplacé par une image pour améliorer la vitesse de chargement du site</p>
-            <p>07/02/23 : Nouveaux jeux et nouvelles apps</p>
-            <p>04/02/23 : Nouvelles apps</p>
-            <p>31/01/23 : Trailer sur l'écran d'accueil</p>
-            <p>27/01/23 : Zone VIP</p>
-            <p>25/01/23 : Système d'username</p>
-            <p>19/01/23 : Ajout de la page Apps</p>
-            <p>18/01/23 : Iframe système pour les jeux</p>
-            <p>16/01/23 : Nouveaux jeux</p>
-            <p>15/01/23 : Thème Sombre fixé</p>
-            <p>14/01/23 : Ajout de la page Jeux</p>
-            <p>13/01/23 : Integration du proxy Ultraviolet</p>
+        <div class="text">Accueil</div>
+        <div class="widget">
+            <div class="widget1 back" id="stylebg" style="background-image: url('./img/bg/light.jpg')">
+                <h5>Bienvenue sur GetTechno</h5>
+                <div class="username">
+                    <h5><i class='bx bx-user'></i></h5>
+                    <h8></i><grade id="grade"></grade></h8>
+                    </i><user id="username">Guest</user>
+                    <h5><i class='bx bx-edit' onclick="setusername(); window.location.href = 'menu.html'"></i></h5>
+                </div>
+            </div>
+            <div class="widget1">
+                <div class="datetime">
+                    <div class="timetext"><i class='bx bx-time'></i><div class="time"></div></div>
+                    <div class="datetext"><div class="date"></div></div>
+                </div>
+            </div>
+            <a href="./img/trailer.mp4"><div class="widgetvideo"></div></a>
+            <a href="./info.html"><div class="widget2" id="stylebg" style="background-image: url('./img/bg/1.jpg')">
+                <h2>Changements</h2>
+                <h3>30/03/23 : PWA supporté, nouvelles apps, barre flottante modifié, intro premier lancement et nouveau jeu</h3>
+                <h3>28/03/23 : Nouvelles apps, barre flottante modifié, nouveaux <br>themes, bords plus arrondis</h3>
+            </div></a>
         </div>
-        <br>
-        <br>
-        <div class="part">
-            <p>R.S. ❤️</p>
-        </div>
-        <br>
         <br>
         <div class="footer">
             <div class="footer-text">GetTechno-V2/main &copy; GetTechno 2023</div>
@@ -182,7 +147,10 @@
     <script src="./uv/uv.config.js"></script>
     <script src="./index.js"></script>
     <script src="./js/time.js"></script>
+    <script src="./js/intro.js"></script>
     <script>
+        document.getElementById("stylebg").style="background-image: url('./img/bg/" + localStorage.getItem('theme') + ".jpg')"
+
         if (localStorage.getItem("theme")===null){
             localStorage.setItem("theme", "light")
         }
@@ -190,6 +158,13 @@
         toggle.addEventListener("click" , () =>{
     sidebar.classList.toggle("close");
 })
+
+    </script>
+    <script>
+        var loader = document.getElementById("preloader");
+        setTimeout(() => {
+            loader.style.display = "none";
+      }, 1500);
 
     </script>
 </body>

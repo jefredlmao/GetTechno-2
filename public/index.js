@@ -12,7 +12,7 @@ form.addEventListener('submit', async event => {
 
 
         localStorage.setItem('iframeurl', __uv$config.prefix + __uv$config.encodeUrl(url))
-          window.location.href = "./iframe.html"
+          window.location.href = "./proxy.html"
     });
 });
 
@@ -32,7 +32,22 @@ function openURL(url) {
       else if (!(url.startsWith("https://") || url.startsWith("http://")))
           url = "http://" + url;
           localStorage.setItem('iframeurl', __uv$config.prefix + __uv$config.encodeUrl(url))
-          window.location.href = "./iframe.html"
+          window.location.href = "./proxy.html"
+  
+    });
+};
+
+function nowgg(url) {
+    window.navigator.serviceWorker
+    .register("./sw.js", {
+      scope: __uv$config.prefix,
+    })
+    .then(() => {
+      if (!isUrl(url)) url = 'https://www.google.com/search?q=' + url;
+      else if (!(url.startsWith("https://") || url.startsWith("http://")))
+          url = "http://" + url;
+          localStorage.setItem('iframeurl', __uv$config.prefix + __uv$config.encodeUrl(url))
+          window.location.href = "./nowgg.html"
   
     });
 };
