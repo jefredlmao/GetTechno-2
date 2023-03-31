@@ -3,6 +3,8 @@
 
 <h1 align="center">GetTechno</h1>
 
+Cool website that I made. French website. Custom website for my school so only youtube and snapchat are proxied
+
 https://webincog.tk
 
 ## Features
