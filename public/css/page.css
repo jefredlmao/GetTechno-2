@@ -694,7 +694,7 @@ header .image-text .profession{
     display: flex;
     align-items: center;
     justify-content: center;
-
+    position: fixed;
     
 }
 
