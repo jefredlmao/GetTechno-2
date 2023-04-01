@@ -13,8 +13,30 @@ function checktheusername(){
     }else{
         document.getElementById("username").innerHTML = localStorage.getItem('nickname')
         if (localStorage.getItem('nickname')==="AldessSc"){
-            document.getElementById("grade").innerHTML = "CEO"
+            document.getElementById("grade").innerHTML = "ADMIN"
         }
+        else{
+            document.getElementById("username").innerHTML = localStorage.getItem('nickname')
+            if (localStorage.getItem('nickname')==="Arrox78"){
+                document.getElementById("grade").innerHTML = "ADMIN"
+            }
+            else{
+                document.getElementById("username").innerHTML = localStorage.getItem('nickname')
+                if (localStorage.getItem('nickname')==="Asicalug"){
+                    document.getElementById("grade").innerHTML = "STAFF"
+                }
+                else{
+                    document.getElementById("username").innerHTML = localStorage.getItem('nickname')
+                    if (localStorage.getItem('nickname')==="Pix4rt"){
+                        document.getElementById("grade").innerHTML = "STAFF"
+                    }
+                    
+                }
+                
+            }
+            
+        }
+        
     }
 }
 
