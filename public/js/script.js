@@ -56,4 +56,7 @@ function setauto() {
     if (localStorage.getItem('tchatname')===null){
         localStorage.setItem('tchatname', 'true')
     }
+    if (localStorage.getItem('chatpos')===null){
+        localStorage.setItem('chatpos', 'bottomright')
+    }
 }
