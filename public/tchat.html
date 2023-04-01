@@ -17,7 +17,7 @@
 
   gtag('config', 'G-R5ZHFSF72J');
 </script>
-    <title>EcoleDirecte | Tchat</title> 
+    <title>GetTechno | Tchat</title> 
 </head>
 <body>
     <nav class="sidebar close">
@@ -27,7 +27,7 @@
                     <img src="img/logo.PNG">
                 </span>
                 <div class="text logo-text">
-                    <span class="name">EcoleDirecte 2</span>
+                    <span class="name">GetTechno 2</span>
                     <span class="profession">Unblock The WEB</span>
                 </div>
             </div>
@@ -112,7 +112,12 @@
     <section class="home">
         <iframe class="widgetbot" id="tchat" src=""></iframe>
       <script>
-        document.getElementById("tchat").src="https://e.widgetbot.io/channels/1086990232349581434/1087008199363805345?username=" + (localStorage.getItem('nickname'))
+        if (localStorage.getItem('tchatname')==='true'){
+            document.getElementById("tchat").src="https://e.widgetbot.io/channels/1086990232349581434/1087008199363805345?username=" + (localStorage.getItem('nickname'))
+        }else{
+            document.getElementById("tchat").src="https://e.widgetbot.io/channels/1086990232349581434/1087008199363805345"
+        }
+        
     </script>
     </section>
 

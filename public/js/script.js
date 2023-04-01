@@ -49,3 +49,11 @@ function setusername(){
         }
         
 }
+
+setauto()
+
+function setauto() {
+    if (localStorage.getItem('tchatname')===null){
+        localStorage.setItem('tchatname', 'true')
+    }
+}

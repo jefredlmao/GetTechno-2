@@ -218,7 +218,7 @@ header .image-text .profession{
 .widget1 {
     margin-left: 30px;
     margin-bottom: 30px;
-    height: 220px;
+    height: 200px;
     width: 400px;
     border-radius: 25px;
     background-color: var(--widget-color);
@@ -238,12 +238,30 @@ header .image-text .profession{
     padding-top: 25px;
     padding-bottom: 25px;
     padding-right: 10px;
-    color: white;
     font-size: 23px;
+    color: white;
+ }
+ 
+ .widget1 icon {
+    padding-left: 25px;
+    padding-top: 15px;
+    padding-bottom: 25px;
+    padding-right: 10px;
+    font-size: 23px;
+    color: white;
+ }
+ .widget1 .text5 {
+    padding-left: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 10px;
+    font-size: 23px;
+    color: var(--widget-text);
+    font-weight: 700;
  }
  .widget1 h8 {
     padding-left: 15px;
-    padding-top: 25px;
+    padding-top: 15px;
     padding-bottom: 25px;
     padding-right: 10px;
     color: white;
@@ -252,7 +270,7 @@ header .image-text .profession{
  }
 
  .widget1 user {
-    padding-top: 25px;
+    padding-top: 15px;
     color: white;
     font-size: 23px;
     font-weight: 600;
@@ -274,22 +292,30 @@ header .image-text .profession{
  }
 
  .datetime .timetext {
+    display: flex;
     padding-top: 25px;
     padding-left: 25px;
     color: var(--widget-text);
     font-size: 30px;
     font-weight: 700;
  }
+ .datetime i {
+    padding-top: 7px;
+ }
+
+ .datetime .time {
+    margin-left: 10px;
+ }
 
  .datetime .datetext {
     padding-left: 25px;
-    padding-top: 15px;
+    padding-top: 25px;
     color: var(--widget-text);
     font-size: 23px;
  }
 
  .widget2 h2 {
-    padding: 25px;
+    padding: 20px;
     color: var(--widget-text);
     font-size: 23px;
     
@@ -306,8 +332,8 @@ header .image-text .profession{
  .widget2 {
     margin-left: 30px;
     margin-bottom: 30px;
-    height: 280px;
-    width: 300px;
+    height: 200px;
+    width: 450px;
     border-radius: 25px;
     background-color: var(--widget-color);
     box-shadow: 4px 3px 8px 1px #96969633;
@@ -317,21 +343,49 @@ header .image-text .profession{
 .widgetvideo {
     margin-left: 30px;
     margin-bottom: 30px;
-    height: 280px;
-    width: 500px;
+    height: 200px;
+    width: 350px;
     border-radius: 25px;
     background-color: var(--widget-color);
     box-shadow: 4px 3px 8px 1px #96969633;
   	-webkit-box-shadow: 4px 3px 8px 1px #96969633;
-    background-image: url("../img/trailer.jpg");
-    background-image: center;
-    background-size: cover;
 }
 
 video {
+    height: 200px;
+    width: 350px;
     border-radius: 25px;
+    background-color: var(--widget-color);
+    box-shadow: 4px 3px 8px 1px #96969633;
+  	-webkit-box-shadow: 4px 3px 8px 1px #96969633;
+}
+.activite .activity {
+    margin-left: 25px;
+    display: flex;
+}
+.activite .activity .appname{
+    margin-left: 25px;
+    margin-top: 25px;
+    font-size: 20px;
+    color: transparent;
+
+}
+.activite .activity .imgcont {
+    width: 80px;
+    height: 80px;
+    border-radius: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
+.stats {
+    margin-left: 25px;
+    margin-top: 5px;
+    font-size: 20px;
+    color: var(--widget-text);
+
+}
 .username {
     margin-top: 30px;
     display: flex;
@@ -371,7 +425,7 @@ video {
     background-image:url("../img/loading.GIF") ;
     background-repeat: no-repeat;
     background-position-x: center;
-    background-position-y: 70%;
+    background-position-y: 100%;
     background-size: 50%;
 }
 
