@@ -1,18 +1,42 @@
 const check = document.getElementById("check")
 const body = document.querySelector('body'),
       sidebar = body.querySelector('nav'),
-      toggle = body.querySelector(".toggle");
+      toggle = body.querySelector(".toggle"),
+      modeSwitch = body.querySelector(".toggle-switch");
 
 checktheusername()
 
 function checktheusername(){
     if (localStorage.getItem('nickname')===null){
+        localStorage.setItem('nickname', "Guest")
         document.getElementById("username").innerHTML = "Guest"
     }else{
         document.getElementById("username").innerHTML = localStorage.getItem('nickname')
         if (localStorage.getItem('nickname')==="AldessSc"){
-            document.getElementById("grade").innerHTML = "CEO"
+            document.getElementById("grade").innerHTML = "ADMIN"
         }
+        else{
+            document.getElementById("username").innerHTML = localStorage.getItem('nickname')
+            if (localStorage.getItem('nickname')==="Arrox78"){
+                document.getElementById("grade").innerHTML = "ADMIN"
+            }
+            else{
+                document.getElementById("username").innerHTML = localStorage.getItem('nickname')
+                if (localStorage.getItem('nickname')==="Asicalug"){
+                    document.getElementById("grade").innerHTML = "STAFF"
+                }
+                else{
+                    document.getElementById("username").innerHTML = localStorage.getItem('nickname')
+                    if (localStorage.getItem('nickname')==="Pix4rt"){
+                        document.getElementById("grade").innerHTML = "STAFF"
+                    }
+                    
+                }
+                
+            }
+            
+        }
+        
     }
 }
 
@@ -23,4 +47,13 @@ function setusername(){
         }else{
             localStorage.setItem('nickname', result)
         }
+        
+}
+
+setauto()
+
+function setauto() {
+    if (localStorage.getItem('tchatname')===null){
+        localStorage.setItem('tchatname', 'true')
+    }
 }

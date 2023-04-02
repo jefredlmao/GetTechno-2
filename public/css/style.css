@@ -27,7 +27,9 @@ body {
     padding: 10px 14px;
     background: var(--sidebar-color);
     transition: var(--tran-05);
-    z-index: 100;  
+    z-index: 1;  
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 .sidebar.close{
     width: 88px;
@@ -135,7 +137,7 @@ header .image-text .profession{
 }
 
 .sidebar li.search-box{
-    border-radius: 6px;
+    border-radius: 15px;
     background-color: var(--primary-color-light);
     cursor: pointer;
     transition: var(--tran-05);
@@ -148,7 +150,7 @@ header .image-text .profession{
     border: none;
     background-color: var(--primary-color-light);
     color: var(--text-color);
-    border-radius: 6px;
+    border-radius: 15px;
     font-size: 17px;
     font-weight: 500;
     transition: var(--tran-05);
@@ -161,16 +163,16 @@ header .image-text .profession{
     align-items: center;
     height: 100%;
     width: 100%;
-    border-radius: 6px;
+    border-radius: 15px;
     text-decoration: none;
     transition: var(--tran-03);
 }
 
-.sidebar li a:hover{
+.sidebar li .hover{
     background-color: var(--primary-color);
 }
-.sidebar li a:hover .icon,
-.sidebar li a:hover .text{
+.sidebar li .hover .icon,
+.sidebar li .hover .text{
     color: var(--sidebar-color);
 }
 
@@ -216,7 +218,7 @@ header .image-text .profession{
 .widget1 {
     margin-left: 30px;
     margin-bottom: 30px;
-    height: 220px;
+    height: 200px;
     width: 400px;
     border-radius: 25px;
     background-color: var(--widget-color);
@@ -236,12 +238,30 @@ header .image-text .profession{
     padding-top: 25px;
     padding-bottom: 25px;
     padding-right: 10px;
-    color: white;
     font-size: 23px;
+    color: white;
+ }
+ 
+ .widget1 icon {
+    padding-left: 25px;
+    padding-top: 15px;
+    padding-bottom: 25px;
+    padding-right: 10px;
+    font-size: 23px;
+    color: white;
+ }
+ .widget1 .text5 {
+    padding-left: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 10px;
+    font-size: 23px;
+    color: var(--widget-text);
+    font-weight: 700;
  }
  .widget1 h8 {
     padding-left: 15px;
-    padding-top: 25px;
+    padding-top: 15px;
     padding-bottom: 25px;
     padding-right: 10px;
     color: white;
@@ -250,7 +270,7 @@ header .image-text .profession{
  }
 
  .widget1 user {
-    padding-top: 25px;
+    padding-top: 15px;
     color: white;
     font-size: 23px;
     font-weight: 600;
@@ -260,39 +280,42 @@ header .image-text .profession{
     color: #e63939;
  }
 
- .widget1 h8 vip{
-    color: #bbff6e;
- }
-
  .widget1 h3 {
     padding-left: 25px;
     color: var(--widget-text);
     font-size: 15px;
     font-weight: 400;
-    
  }
 
  .back {
-    background-image: url("../img/background.png");
     background-size: cover;
  }
 
- .datetime .time {
+ .datetime .timetext {
+    display: flex;
     padding-top: 25px;
     padding-left: 25px;
     color: var(--widget-text);
     font-size: 30px;
     font-weight: 700;
  }
+ .datetime i {
+    padding-top: 7px;
+ }
 
- .datetime .date {
-    padding: 25px;
+ .datetime .time {
+    margin-left: 10px;
+ }
+
+ .datetime .datetext {
+    padding-left: 25px;
+    padding-top: 25px;
     color: var(--widget-text);
     font-size: 23px;
  }
 
  .widget2 h2 {
-    padding: 25px;
+    padding: 20px;
     color: var(--widget-text);
     font-size: 23px;
     
@@ -309,8 +332,8 @@ header .image-text .profession{
  .widget2 {
     margin-left: 30px;
     margin-bottom: 30px;
-    height: 280px;
-    width: 300px;
+    height: 200px;
+    width: 450px;
     border-radius: 25px;
     background-color: var(--widget-color);
     box-shadow: 4px 3px 8px 1px #96969633;
@@ -320,21 +343,49 @@ header .image-text .profession{
 .widgetvideo {
     margin-left: 30px;
     margin-bottom: 30px;
-    height: 280px;
-    width: 500px;
+    height: 200px;
+    width: 350px;
     border-radius: 25px;
     background-color: var(--widget-color);
     box-shadow: 4px 3px 8px 1px #96969633;
   	-webkit-box-shadow: 4px 3px 8px 1px #96969633;
-    background-image: url("../img/trailer.jpg");
-    background-image: center;
-    background-size: cover;
 }
 
 video {
+    height: 200px;
+    width: 350px;
     border-radius: 25px;
+    background-color: var(--widget-color);
+    box-shadow: 4px 3px 8px 1px #96969633;
+  	-webkit-box-shadow: 4px 3px 8px 1px #96969633;
+}
+.activite .activity {
+    margin-left: 25px;
+    display: flex;
+}
+.activite .activity .appname{
+    margin-left: 25px;
+    margin-top: 25px;
+    font-size: 20px;
+    color: transparent;
+
+}
+.activite .activity .imgcont {
+    width: 80px;
+    height: 80px;
+    border-radius: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
+.stats {
+    margin-left: 25px;
+    margin-top: 5px;
+    font-size: 20px;
+    color: var(--widget-text);
+
+}
 .username {
     margin-top: 30px;
     display: flex;
@@ -349,66 +400,80 @@ video {
     padding-bottom: 20px;
 }
 
-iframe {
+.widgetbot {
     border: 0;
-    height: 98vh;
+    height: 100vh;
     width: 100%;
+    position: absolute;
 }
 
 .part {
     margin-left: 60px;
     color: var(--widget-text);
 }
-.parametre {
-    margin-left: 60px;
-}
-.parametre .reset{
-    border: none;
-    border-radius: 10px;
-    padding: 10px;
-    color: var(--widget-text);
-    background-color: var(--widget-color);
-    box-shadow: 4px 3px 8px 1px #96969633;
-  	-webkit-box-shadow: 4px 3px 8px 1px #96969633;
-}
-.widget1 img{
-    height: 40px;
-    width: 40px;
-    border-radius: 100%;
-    margin-left: 25px;
-    margin-top: 20px;
-    margin-bottom: 0px;
-    size: 100%;
-}
-.parametre h4 {
-   font-size: 20px;
-   font-weight: 500;
-   color: var(--widget-text);
+
+
+.intro {
+    position: fixed;
+    z-index: 200;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #121111;
+    transition: 1s;
+    background-image:url("../img/loading.GIF") ;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 100%;
+    background-size: 50%;
 }
 
-.parametre input{
-    width: 500px;
-    border-radius: 20px;
-    padding: 5px;
-    border: 0;
-    box-shadow: 4px 3px 8px 1px #96969633;
-  	-webkit-box-shadow: 4px 3px 8px 1px #96969633;
-    margin-right: 5px
+.logo-header {
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 50px;
+    font-weight: 300;
 }
-.parametre select{
-    width: 300px;
-    border-radius: 20px;
-    padding: 5px;
-    border: 0;
-    box-shadow: 4px 3px 8px 1px #96969633;
-  	-webkit-box-shadow: 4px 3px 8px 1px #96969633;
+.logo-ok {
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 30px;
+    font-weight: 200;
 }
-.parametre .setmdp{
-    border: none;
-    border-radius: 10px;
-    padding: 7px;
-    color: var(--widget-text);
-    background-color: var(--widget-color);
-    box-shadow: 4px 3px 8px 1px #96969633;
-  	-webkit-box-shadow: 4px 3px 8px 1px #96969633;
+
+.logo {
+    position: relative;
+    display: inline-block;
+    bottom: -20px;
+    opacity: 0;
+    color:white ;
+}
+
+.logo.active {
+    bottom: 0;
+    opacity: 1;
+    transition: ease-in-out 0.5s;
+}
+
+.logo.fade {
+    bottom: 150px;
+    opacity: 0;
+    transition: ease-in-out 0.5s;
+}
+.intro p {
+    margin-top: 50%;
+    color: white;
+}
+.intro img {
+    width: 100px;
+    height: 100px;
+    margin-top: 70px;
+    margin-left: calc(50% - 50px);
 }

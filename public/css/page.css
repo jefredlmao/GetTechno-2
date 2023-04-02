@@ -18,7 +18,7 @@ body {
     color: #fff;
 }
 
- .sidebar{
+.sidebar{
     position: fixed;
     top: 0;
     left: 0;
@@ -27,7 +27,9 @@ body {
     padding: 10px 14px;
     background: var(--sidebar-color);
     transition: var(--tran-05);
-    z-index: 100;  
+    z-index: 1;  
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 .sidebar.close{
     width: 88px;
@@ -135,7 +137,7 @@ header .image-text .profession{
 }
 
 .sidebar li.search-box{
-    border-radius: 6px;
+    border-radius: 15px;
     background-color: var(--primary-color-light);
     cursor: pointer;
     transition: var(--tran-05);
@@ -148,9 +150,9 @@ header .image-text .profession{
     border: none;
     background-color: var(--primary-color-light);
     color: var(--text-color);
-    border-radius: 6px;
     font-size: 17px;
     font-weight: 500;
+    border-radius: 15px;
     transition: var(--tran-05);
 }
 .sidebar li a{
@@ -161,18 +163,19 @@ header .image-text .profession{
     align-items: center;
     height: 100%;
     width: 100%;
-    border-radius: 6px;
+    border-radius: 15px;
     text-decoration: none;
     transition: var(--tran-03);
 }
 
-.sidebar li a:hover{
+.sidebar li .hover{
     background-color: var(--primary-color);
 }
-.sidebar li a:hover .icon,
-.sidebar li a:hover .text{
+.sidebar li .hover .icon,
+.sidebar li .hover .text{
     color: var(--sidebar-color);
 }
+
 
 .sidebar .menu-bar{
     height: calc(100% - 55px);
@@ -233,6 +236,7 @@ header .image-text .profession{
     align-items: flex-end;
     background-size: cover;
     background-position: center;
+    background-color: white;
 }
 
 .cards .card h2 {
@@ -404,26 +408,21 @@ header .image-text .profession{
 .cards .krunker {
     background-image: url("../img/games/krunker.png");
 }
-.a {
-    margin-top: 20px;
-    margin-left: 50px;
-}
 
 .a #domUrlToOpen {
     height: 30px;
     width: 300px;
 }
-.console-container {
-    margin-left: 50px;
-}
 
-button {
-    border-radius: 50px;
-    padding: 8px;
+.a button {
     margin: 5px;
     color: rgb(0, 0, 0);
-    background-color: #e0e0e0;
+    background-color: #e7e5e5;
     border: 0;
+    border-radius: 15px;
+    padding: 7px;
+    color: var(--widget-text);
+    background-color: var(--widget-color);
     box-shadow: 4px 3px 8px 1px #96969633;
   	-webkit-box-shadow: 4px 3px 8px 1px #96969633;
 }
@@ -431,23 +430,6 @@ button {
     color: var(--widget-text)
 }
 
-.a #url-target {
-    height: 30px;
-    width: 300px;
-}
-
-.console-container {
-    margin-left: 50px;
-}
-.consolebody p{
-    color: var(--widget-text);
-}
-.bookmarklet {
-    margin-left: 50px;
-}
-.bookmarklet h3, p {
-    color: var(--widget-text);
-}
 .cards .ecoledirecte {
     background-image: url("../img/apps/ecoledirecte.png");
 }
@@ -469,7 +451,6 @@ button {
 .cards .diep{
     background-image: url("../img/games/diep.png");
 }
-
 .widget{
     margin-top: 20px;
     display: flex;
@@ -482,42 +463,58 @@ button {
     height: 220px;
     width: 80%;
     border-radius: 25px;
-    background-color: white;
+    background-color: var(--widget-color);
     box-shadow: 4px 3px 8px 1px #96969633;
   	-webkit-box-shadow: 4px 3px 8px 1px #96969633;
 }
+
+ .widget1 h2 {
+    padding: 25px;
+    color: white;
+    font-size: 23px;
+    
+ }
 
  .widget1 h5 {
     padding-left: 25px;
     padding-top: 25px;
     padding-bottom: 25px;
     padding-right: 10px;
-    color: black;
-    font-size: 28px;
+    color: white;
+    font-size: 23px;
+ }
+ .widget1 h8 {
+    padding-left: 15px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 10px;
+    color: white;
+    font-size: 23px;
+    font-weight: 600;
  }
 
- .widget1 h6 {
+ .widget1 user {
+    padding-top: 25px;
+    color: white;
+    font-size: 23px;
+    font-weight: 600;
+ }
+
+ .widget1 h8 grade{
+    color: #e63939;
+ }
+
+ .widget1 h3 {
     padding-left: 25px;
-    padding-top: 5px;
-    padding-right: 10px;
-    color: black;
+    color: var(--widget-text);
     font-size: 15px;
-    font-weight: 300;
+    font-weight: 400;
  }
 
  .back {
-    background-image: url("../img/cloud/cloud.PNG");
-    background-size: 55%;
-    background-repeat: no-repeat;
-    background-position: right;
+    background-size: cover;
  }
 
- .back2 {
-    background-image: url("../img/trailer.jpg");
-    background-size: 55%;
-    background-repeat: no-repeat;
-    background-position: right;
- }
  .username {
     margin-top: 30px;
     display: flex;
@@ -529,7 +526,7 @@ button {
     background-image: url("../img/cloud/roblox.JPG");
 }
 .cards .stumble{
-    background-image: url("../img/cloud/stumble.PNG");
+    background-image: url("../img/cloud/stumble.jpg");
 }
 .cards .callof{
     background-image: url("../img/cloud/callof.JPG");
@@ -555,12 +552,251 @@ button {
 .cards .aptoide{
     background-image: url("../img/cloud/aptoide.jpg");
 }
-.cards .hill{
-    background-image: url("../img/cloud/hill.jpg");
+.cards .pubg{
+    background-image: url("../img/cloud/pubg.jpg");
 }
 .cards .block{
     background-image: url("../img/cloud/block.jpg");
 }
-.cards .pubg{
-    background-image: url("../img/cloud/pubg.jpg");
+.cards .gartic{
+    background-image: url("../img/games/gartic.jpg");
+}
+.cards .slither{
+    background-image: url("../img/games/slither.jpg");
+}
+.ngg {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40vh;
+}
+
+.classif {
+    width: 90%;
+    margin-left: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.classif h2 {
+    margin-left: 18px;
+    margin-bottom: 18px;
+    border-radius: 15px;
+    margin-right: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--widget-text);
+    background-color: var(--widget-color);
+    box-shadow: 4px 3px 8px 1px #6d6d6d33;
+  	-webkit-box-shadow: 4px 3px 8px 1px #6d6d6d33;
+}
+.parametre {
+    margin-left: 60px;
+}
+.parametre .reset{
+    border: none;
+    border-radius: 15px;
+    padding: 8px;
+    color: var(--widget-text);
+    background-color: var(--widget-color);
+    box-shadow: 4px 3px 8px 1px #96969633;
+  	-webkit-box-shadow: 4px 3px 8px 1px #96969633;
+}
+.parametre h4 {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--widget-text);
+ }
+ 
+ .parametre input{
+     width: 500px;
+     border-radius: 20px;
+     padding: 5px;
+     border: 0;
+     box-shadow: 4px 3px 8px 1px #96969633;
+       -webkit-box-shadow: 4px 3px 8px 1px #96969633;
+     margin-right: 5px
+ }
+ .parametre select{
+     width: 300px;
+     border-radius: 20px;
+     padding: 5px;
+     border: 0;
+     box-shadow: 4px 3px 8px 1px #96969633;
+       -webkit-box-shadow: 4px 3px 8px 1px #96969633;
+ }
+.cards .moomoo{
+    background-image: url("../img/games/moomoo.png");
+}
+.cards .among{
+    background-image: url("../img/cloud/among.jpeg");
+}
+.cards .cut{
+    background-image: url("../img/cloud/cut.png");
+}
+.cards .cut2{
+    background-image: url("../img/cloud/cut2.png");
+}
+.cards .fifa{
+    background-image: url("../img/cloud/fifa.jpg");
+}
+.cards .granny{
+    background-image: url("../img/cloud/granny.png");
+}
+.cards .raid{
+    background-image: url("../img/cloud/raid.jpeg");
+}
+.cards .pixel3d{
+    background-image: url("../img/cloud/pixel.jpeg");
+}
+.cards .statesurvi{
+    background-image: url("../img/cloud/state.jpeg");
+}
+.cards .visual{
+    background-image: url("../img/apps/vscode.png");
+}
+.cards .sound{
+    background-image: url("../img/apps/soundcloud.jpg");
+}
+.cards .telegram{
+    background-image: url("../img/apps/telegram.png");
+}
+.cards .gmail{
+    background-image: url("../img/apps/gmail.jpg");
+}
+.cards .analytics{
+    background-image: url("../img/apps/analytics.png");
+}
+.cards .nightflix{
+    background-image: url("../img/apps/nightflixx.png");
+}
+.cards .angry{
+    background-image: url("../img/games/angry.png");
+}
+.cards .stabfish{
+    background-image: url("../img/games/stabfish.png");
+}
+.cards .whatsapp{
+    background-image: url("../img/apps/whatsapp.png");
+}
+.cards .snap{
+    background-image: url("../img/apps/snapchat.png");
+}
+.cards .duckduckgo{
+    background-image: url("../img/apps/duckduckgo.png");
+}
+.cards .aternos{
+    background-image: url("../img/apps/aternos.jpg");
+}
+
+
+.iframe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iframe .DraggableDiv {
+    top: 10px;
+    background-color: var(--body-color);
+    width: 230px;
+    height: 43px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 200;
+    border-radius: 50px;
+    box-shadow: 4px 3px 8px 1px #96969633;
+  	-webkit-box-shadow: 4px 3px 8px 1px #96969633;
+}
+
+.iframe .DraggableDiv i {
+    color: var(--primary-color);
+    margin: 11px;
+    font-size: 19px;
+}
+
+.iframe .DraggableDiv .panic {
+    color: #ee5d5d;
+}
+
+.cards .imgbb{
+    background-image: url("../img/apps/imbgg.png");
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 58px;
+    height: 30px;
+    
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--widget-color);
+    -webkit-transition: .4s;
+    transition: .4s;
+    box-shadow: 4px 3px 8px 1px #96969633;
+  	-webkit-box-shadow: 4px 3px 8px 1px #96969633;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 23px;
+    width: 23px;
+    left: 4px;
+    bottom: 4px;
+    background-color: var(--sidebar-color);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: var(--primary-color);
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px var(--primary-color);
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+.textset {
+    color: var(--widget-text);
+    margin-left: 10px;
+    font-size: 15px;
+    font-weight: 400;
 }

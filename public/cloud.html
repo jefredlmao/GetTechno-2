@@ -50,7 +50,7 @@
 
                 <ul class="menu-links">
                     <li class="nav-link">
-                        <a href="index.html">
+                        <a href="menu.html">
                             <i class='bx bx-home-alt icon' ></i>
                             <span class="text nav-text">Accueil</span>
                         </a>
@@ -58,19 +58,19 @@
 
                     <li class="nav-link">
                         <a href="games.html">
-                            <i class='bx bx-game icon' ></i>
+                            <i class='bx bx-joystick icon' ></i>
                             <span class="text nav-text">Jeux</span>
                         </a>
                     </li>
                     
                     <li class="nav-link">
                         <a href="apps.html">
-                            <i class='bx bx-mobile-landscape icon'></i>
+                            <i class='bx bxs-grid icon'></i>
                             <span class="text nav-text">Apps</span>
                         </a>
                     </li>
                     <li class="nav-link">
-                        <a href="cloud.html">
+                        <a href="cloud.html" class="hover">
                             <i class='bx bx-cloud icon' ></i>
                             <span class="text nav-text">Cloud</span>
                         </a>
@@ -81,7 +81,6 @@
                             <span class="text nav-text">Tchat</span>
                         </a>
                     </li>
-                
 
                 </ul>
             </div>
@@ -111,47 +110,78 @@
 
     </nav>
     <section class="home">
-        <div class="text">Mobile Cloud</div>
         <div class="widget">
-            <div class="widget1 back2">
+            <div class="widget1 back" id="stylebg" style="background-image: url('./img/bg/1.jpg')">
                 <h5>Mobile Cloud</h5>
-                <h6>Tous vos jeux et apps </h6>
-                <h6>mobiles préférés sont maintenant</h6>
-                <h6>disponibles sur GetTechno</h6>
+                <div class="username">
+                    <h5><i class='bx bx-user'></i></h5>
+                    <h8></i><grade id="grade"></grade><vip id="vip"></vip></h8>
+                    </i><user id="username">Guest</user>
+                    <h5><i class='bx bx-edit' onclick="setusername(); window.location.href = 'menu.html'"></i></h5>
+                </div>
             </div>
             
         </div>
+        <div class="classif">
+            <h2 class="white"><i class='bx bx-store'></i> App Store</h2>
+            <h2 class="white"><i class='bx bx-game'></i> Jeux Cloud</h2>
+            <h2 class="white"><i class='bx bx-cloud'></i> Jeux Cloud Multijoueurs</h2>
+        </div>
         <div class="cards">
-            <div class="card g android" onclick="openURL('./now/android.html')">
-                <h2 class="white">Android</h2>
+            <div class="card g android" onclick="openURL('https://nowggbypass.netlify.app/android.html')">
+                <h2 class="white"><i class='bx bx-store'></i> Android</h2>
             </div>
-            <div class="card g aptoide" onclick="openURL('./now/aptoide.html')">
-                <h2 class="white">Aptoide</h2>
+            <div class="card g aptoide" onclick="openURL('https://nowggbypass.netlify.app/aptoide.html')">
+                <h2 class="white"><i class='bx bx-store'></i> Aptoide</h2>
+            </div>     
+            <div class="card p among" onclick="openURL('https://nowggbypass.netlify.app/among.html')">
+                <h2 class="white"><i class='bx bx-cloud'></i> Among Us</h2>
             </div>
-            <div class="card p roblox" onclick="openURL('./now/roblox.html')">
-                <h2 class="white">Roblox</h2>
+            <div class="card p block" onclick="openURL('https://nowggbypass.netlify.app/block.html')">
+                <h2 class="white"><i class='bx bx-cloud'></i> BlockMan Go</h2>
             </div>
-            <div class="card p minecraft" onclick="openURL('./now/minecraft.html')">
-                <h2 class="white">Minecraft Trial</h2>
+            <div class="card p callof" onclick="openURL('https://nowggbypass.netlify.app/callof.html')">
+                <h2 class="white"><i class='bx bx-cloud'></i> Call of Duty</h2>
             </div>
-            <div class="card p stumble" onclick="openURL('./now/stumble.html')">
-                <h2 class="white">Stumble Guys</h2>
+            <div class="card p cut" onclick="openURL('https://nowggbypass.netlify.app/cut.html')">
+                <h2 class="white"><i class='bx bx-game'></i> Cut the Rope</h2>
             </div>
-            <div class="card p callof" onclick="openURL('./now/callof.html')">
-                <h2 class="white">Call of Duty</h2>
+            <div class="card p cut2" onclick="openURL('https://nowggbypass.netlify.app/cut2.html')">
+                <h2 class="white"><i class='bx bx-game'></i> Cut the Rope 2</h2>
             </div>
-            <div class="card p hill" onclick="openURL('./now/hill.html')">
-                <h2 class="white">Hill Climbing Racing</h2>
+            <div class="card p fifa" onclick="openURL('https://nowggbypass.netlify.app/fifa.html')">
+                <h2 class="white"><i class='bx bx-game'></i> FIFA</h2>
             </div>
-            <div class="card p block" onclick="openURL('./now/block.html')">
-                <h2 class="white">BlockMan Go</h2>
+            <div class="card p granny" onclick="openURL('https://nowggbypass.netlify.app/granny.html')">
+                <h2 class="white"><i class='bx bx-game'></i> Granny</h2>
             </div>
-            <div class="card p pubg" onclick="openURL('./now/pubg.html')">
-                <h2 class="white">PUBG</h2>
+            <div class="card p minecraft" onclick="openURL('https://nowggbypass.netlify.app/minecraft.html')">
+                <h2 class="white"><i class='bx bx-game'></i> Minecraft Trial</h2>
+            </div>    
+            <div class="card p pixel3d" onclick="openURL('https://nowggbypass.netlify.app/pixel3d.html')">
+                <h2 class="white"><i class='bx bx-cloud'></i> Pixel Gun 3D</h2>
+            </div>
+            <div class="card p pubg" onclick="openURL('https://nowggbypass.netlify.app/pubg.html')">
+                <h2 class="white"><i class='bx bx-cloud'></i> PUBG</h2>
+            </div>
+            <div class="card p raid" onclick="openURL('https://nowggbypass.netlify.app/raid.html')">
+                <h2 class="white"><i class='bx bx-cloud'></i> RAID</h2>
+            </div>
+            <div class="card p roblox" onclick="openURL('https://nowggbypass.netlify.app/roblox.html')">
+                <h2 class="white"><i class='bx bx-cloud'></i> Roblox</h2>
+            </div>
+            <div class="card p statesurvi" onclick="openURL('https://nowggbypass.netlify.app/statesurvi.html')">
+                <h2 class="white"><i class='bx bx-cloud'></i> State of Survival</h2>
+            </div>
+            <div class="card p stumble" onclick="openURL('https://nowggbypass.netlify.app/stumble.html')">
+                <h2 class="white"><i class='bx bx-cloud'></i> Stumble Guys</h2>
             </div>
         </div>
+        <div class="parametre">
+            <a href="https://mcpedl.org/uploads_files/17-03-2023/minecraft-1-19-71.apk" download><button class="reset">Minecraft PE 1.19.71 APK</button></a>
+        </div>
         <div class="footer">
-            <div class="footer-text">GetTechno-V2/main 43bq263 &copy; GetTechno 2023</div>
+            <div class="footer-text">GetTechno-V2/main &copy; GetTechno 2023</div>
         </div>
     </section>
     <script src="./js/script.js"></script>
@@ -159,6 +189,8 @@
     <script src="./uv/uv.config.js"></script>
     <script src="./index.js"></script>
     <script>
+        document.getElementById("stylebg").style="background-image: url('./img/bg/" + localStorage.getItem('theme') + ".jpg')"
+
         if (localStorage.getItem("theme")===null){
             localStorage.setItem("theme", "light")
         }

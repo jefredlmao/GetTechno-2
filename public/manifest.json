@@ -1,0 +1,15 @@
+{
+    "short_name": "GetTechno",
+    "name": "GetTechno 2",
+    "start_url": "/",
+    "theme_color": "#2e2e2e",
+    "background_color": "#ffffff",
+    "display": "fullscreen",
+    "icons": [
+      {
+        "src": "/img/logo.PNG",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+  }

@@ -10,6 +10,7 @@
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-R5ZHFSF72J"></script>
+    <link rel="manifest" href="manifest.json">
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -21,6 +22,16 @@
     <title>GetTechno | Accueil</title> 
 </head>
 <body>
+    <div class="intro">
+        <img src="./img/logo.PNG">
+        <h1 class="logo-header">
+        <span class="logo">Get</span><span class="logo">Techno</span><span class="logo">
+        
+        </h1>
+        <h2 class="logo-ok">
+        <span class="logo">Unblock The WEB</span>
+        </h2>
+        </div>
     <nav class="sidebar close">
         <header>
             <div class="image-text">
@@ -49,8 +60,8 @@
                 </li>
 
                 <ul class="menu-links">
-                    <li class="nav-link">
-                        <a href="index.html">
+                    <li class="nav-link hover">
+                        <a href="menu.html" class="hover">
                             <i class='bx bx-home-alt icon' ></i>
                             <span class="text nav-text">Accueil</span>
                         </a>
@@ -58,14 +69,14 @@
 
                     <li class="nav-link">
                         <a href="games.html">
-                            <i class='bx bx-game icon' ></i>
+                            <i class='bx bx-joystick icon' ></i>
                             <span class="text nav-text">Jeux</span>
                         </a>
                     </li>
                     
                     <li class="nav-link">
                         <a href="apps.html">
-                            <i class='bx bx-mobile-landscape icon'></i>
+                            <i class='bx bxs-grid icon'></i>
                             <span class="text nav-text">Apps</span>
                         </a>
                     </li>
@@ -81,8 +92,6 @@
                             <span class="text nav-text">Tchat</span>
                         </a>
                     </li>
-                
-
                 </ul>
             </div>
 
@@ -114,32 +123,46 @@
     <section class="home">
         <div class="text">Accueil</div>
         <div class="widget">
-            <div class="widget1 back">
+            <div class="widget1 back" id="stylebg" style="background-image: url('./img/bg/light.jpg')">
                 <h5>Bienvenue sur GetTechno</h5>
                 <div class="username">
-                    <img src="./img/user.png" alt="userimage">
-                    <h8><grade id="grade"></grade><vip id="vip"></vip></h8>
-                    <user id="username">Guest</user>
+                    <icon><i class='bx bx-user'></i></icon>
+                    <h8></i><grade id="grade"></grade></h8>
+                    </i><user id="username">Guest</user>
+                    <icon><i class='bx bx-edit' onclick="setusername(); window.location.href = 'menu.html'"></i></icon>
                 </div>
             </div>
             <div class="widget1">
                 <div class="datetime">
-                   <div class="time"></div>
-                    <div class="date"></div>
+                    <div class="timetext"><i class="bx bx-time"></i><div class="time"></div></div>
+                    <div class="datetext"><div class="date"></div></div>
                 </div>
             </div>
-            <a href="./img/trailer.mp4"><div class="widgetvideo"></div></a>
-            <div class="widget2">
-                <h2>Actualités</h2>
-                <h3>18/03/23 : GetTechno Cloud is live</h3>
-                <h3>18/03/23 : Nouvelles apps</h3>
-                <h3>17/03/23 : Bouton login dans les paramètres</h3>
+            <div class="widgetvideo">
+                <video src="./img/trailer.mp4" muted controls></video>
+            </div>
+            <a href="./info.html"><div class="widget2" id="stylebg" style="background-image: url('./img/bg/1.jpg')">
+                <h2>Changements</h2>
+                <h3>02/04/23 : MCPE dl, nouvelle app, iframe fixé</h3>
+                <h3>01/04/23 : Option pour la position du tchat, option pour le tchat</h3>
+                <h3>31/03/23 : Proxy réparé, barre flottante modifié, fake crash host sur GetTechno</h3>
+            </div></a>
+            <div class="widget1 activite">
+                <div class="text5">Reprendre son activité</div>
+                <div class="activity">
+                    <div class="imgcont"></div><div class="appname">Youtube</div>
+                </div>
                 
             </div>
+            <div class="widget1 activite">
+                <div class="text5"></div>
+                    <div class="stats"></div>
+            </div>
+            
         </div>
         <br>
         <div class="footer">
-            <div class="footer-text">GetTechno-V2/main 43bq263 &copy; GetTechno 2023</div>
+            <div class="footer-text">GetTechno-V2/main &copy; GetTechno 2023</div>
         </div>
     </section>
 
@@ -148,7 +171,10 @@
     <script src="./uv/uv.config.js"></script>
     <script src="./index.js"></script>
     <script src="./js/time.js"></script>
+    <script src="./js/intro.js"></script>
     <script>
+        document.getElementById("stylebg").style="background-image: url('./img/bg/" + localStorage.getItem('theme') + ".jpg')"
+
         if (localStorage.getItem("theme")===null){
             localStorage.setItem("theme", "light")
         }
@@ -156,6 +182,13 @@
         toggle.addEventListener("click" , () =>{
     sidebar.classList.toggle("close");
 })
+
+    </script>
+    <script>
+        var loader = document.getElementById("preloader");
+        setTimeout(() => {
+            loader.style.display = "none";
+      }, 1500);
 
     </script>
 </body>

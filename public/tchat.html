@@ -48,7 +48,7 @@
 
                 <ul class="menu-links">
                     <li class="nav-link">
-                        <a href="index.html">
+                        <a href="menu.html">
                             <i class='bx bx-home-alt icon' ></i>
                             <span class="text nav-text">Accueil</span>
                         </a>
@@ -56,14 +56,14 @@
 
                     <li class="nav-link">
                         <a href="games.html">
-                            <i class='bx bx-game icon' ></i>
+                            <i class='bx bx-joystick icon' ></i>
                             <span class="text nav-text">Jeux</span>
                         </a>
                     </li>
 
                     <li class="nav-link">
                         <a href="apps.html">
-                            <i class='bx bx-mobile-landscape icon'></i>
+                            <i class='bx bxs-grid icon'></i>
                             <span class="text nav-text">Apps</span>
                         </a>
                     </li>
@@ -74,13 +74,11 @@
                         </a>
                     </li>
                     <li class="nav-link">
-                        <a href="tchat.html">
+                        <a href="tchat.html" class="hover">
                             <i class='bx bx-chat icon'></i>
                             <span class="text nav-text">Tchat</span>
                         </a>
                     </li>
-                
-
 
                 </ul>
             </div>
@@ -112,9 +110,14 @@
     </nav>
 
     <section class="home">
-      <iframe id="tchat" src=""></iframe>
+        <iframe class="widgetbot" id="tchat" src=""></iframe>
       <script>
-        document.getElementById("tchat").src="https://organizations.minnit.chat/937108747186157/GetTechno?embed&transparent&language=fr&nickname=" + (localStorage.getItem('nickname'))
+        if (localStorage.getItem('tchatname')==='true'){
+            document.getElementById("tchat").src="https://e.widgetbot.io/channels/1086990232349581434/1087008199363805345?username=" + (localStorage.getItem('nickname'))
+        }else{
+            document.getElementById("tchat").src="https://e.widgetbot.io/channels/1086990232349581434/1087008199363805345"
+        }
+        
     </script>
     </section>
 

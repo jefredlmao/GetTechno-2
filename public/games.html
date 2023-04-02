@@ -49,22 +49,22 @@
 
                 <ul class="menu-links">
                     <li class="nav-link">
-                        <a href="index.html">
+                        <a href="menu.html">
                             <i class='bx bx-home-alt icon' ></i>
                             <span class="text nav-text">Accueil</span>
                         </a>
                     </li>
 
                     <li class="nav-link">
-                        <a href="games.html">
-                            <i class='bx bx-game icon' ></i>
+                        <a href="games.html" class="hover">
+                            <i class='bx bx-joystick icon' ></i>
                             <span class="text nav-text">Jeux</span>
                         </a>
                     </li>
 
                     <li class="nav-link">
                         <a href="apps.html">
-                            <i class='bx bx-mobile-landscape icon'></i>
+                            <i class='bx bxs-grid icon'></i>
                             <span class="text nav-text">Apps</span>
                         </a>
                     </li>
@@ -80,8 +80,7 @@
                             <span class="text nav-text">Tchat</span>
                         </a>
                     </li>
-                    
-                    
+
 
                 </ul>
             </div>
@@ -113,104 +112,122 @@
     </nav>
 
     <section class="home">
-        <div class="text">Games</div>
         <div class="widget">
-            <div class="widget1 back">
-                <h5>Mobile Cloud</h5>
-                <h6>Tous vos jeux et apps </h6>
-                <h6>mobiles préférés sont maintenant</h6>
-                <h6>disponibles sur GetTechno <a href="./cloud.html">ici</a></h6>
+            <div class="widget1 back" id="stylebg" style="background-image: url('./img/bg/1.jpg')">
+                <h5>Jeux</h5>
+                <div class="username">
+                    <h5><i class='bx bx-user'></i></h5>
+                    <h8></i><grade id="grade"></grade></h8>
+                    </i><user id="username">Guest</user>
+                    <h5><i class='bx bx-edit' onclick="setusername(); window.location.href = 'menu.html'"></i></h5>
+                </div>
             </div>
             
         </div>
+        <div class="classif">
+            <h2 class="white"><i class='bx bx-game'></i> Jeux HTML5</h2>
+            <h2 class="white"><i class='bx bx-joystick'></i> Jeux Online</h2>
+            <h2 class="white"><i class='bx bx-cloud'></i> Jeux Multijoueurs</h2>
+        </div>
         <div class="cards">
-            <a href="https://narrow.one"><div class="card g narrow">
-                <h2 class="white">Narrow One</h2>
+            <a href="./iframe.html"><div class="card g narrow" onclick="localStorage.setItem('iframeurl', 'https://narrow.one')">
+                <h2 class="white"><i class='bx bx-cloud'></i> Narrow One</h2>
             </div></a>
-            <a href="https://ev.io"><div class="card g eve">
-                <h2 class="white">Ev</h2>
+            <a href="./iframe.html"><div class="card g eve" onclick="localStorage.setItem('iframeurl', 'https://ev.io')">
+                <h2 class="white"><i class='bx bx-cloud'></i> Ev</h2>
             </div></a>
-            <a href="https://bloxd.io"><div class="card p bloxd">
-                <h2 class="white">Bloxd</h2>
+            <a href="./iframe.html"><div class="card p bloxd" onclick="localStorage.setItem('iframeurl', 'https://bloxd.io')">
+                <h2 class="white"><i class='bx bx-cloud'></i> Bloxd</h2>
             </div></a>
-            <a href="https://skribbl.io"><div class="card p skkribl">
-                <h2 class="white">Skribbl</h2>
+            <a href="./iframe.html"><div class="card p angry" onclick="localStorage.setItem('iframeurl', 'https://gettechnoangrybirdshtml5.netlify.app')">
+                <h2 class="white"><i class='bx bx-game'></i> Angry Birds</h2>
             </div></a>
-            <a href="./games/2048/index.html"><div class="card p deux">
-                <h2 class="black">2048</h2>
+            <a href="./iframe.html"><div class="card p skkribl" onclick="localStorage.setItem('iframeurl', 'https://skribbl.io')">
+                <h2 class="white"><i class='bx bx-cloud'></i> Skribbl</h2>
             </div></a>
-            <a href="./games/swerve/index.html"><div class="card p swerve">
-                <h2 class="white">Swerve</h2>
+            <a href="./iframe.html"><div class="card p deux" onclick="localStorage.setItem('iframeurl', 'games/2048/index.html')">
+                <h2 class="black"><i class='bx bx-game'></i> 2048</h2>
             </div></a>
-            <a href="./games/drive-mad/index.html"><div class="card p drive">
-                <h2 class="white">Drive Mad</h2>
+            <a href="./iframe.html"><div class="card p swerve" onclick="localStorage.setItem('iframeurl', 'games/swerve/index.html')">
+                <h2 class="white"><i class='bx bx-game'></i> Swerve</h2>
             </div></a>
-            <a href="https://ducklings.io"><div class="card p duck">
-                <h2 class="black">Ducklings</h2>
+            <a href="./iframe.html"><div class="card p drive" onclick="localStorage.setItem('iframeurl', 'games/drive-mad/index.html')">
+                <h2 class="white"><i class='bx bx-game'></i> Drive Mad</h2>
             </div></a>
-            <a href="./games/subway-surfers/index.html"><div class="card p subway">
-                <h2 class="white">Subway Surfers</h2>
+            <a href="./iframe.html"><div class="card p duck" onclick="localStorage.setItem('iframeurl', 'https://ducklings.io')">
+                <h2 class="black"><i class='bx bx-joystick'></i> Ducklings</h2>
             </div></a>
-            <a href="./games/paperio2/index.html"><div class="card p paper">
-                <h2 class="black">Paper 2</h2>
+            <a href="./iframe.html"><div class="card p subway" onclick="localStorage.setItem('iframeurl', 'games/subway-surfers/index.html')">
+                <h2 class="white"><i class='bx bx-game'></i> Subway Surfers</h2>
             </div></a>
-            <a href="./games/stack/index.html"><div class="card p stack">
-                <h2 class="white">Stack</h2>
+            <a href="./iframe.html"><div class="card p paper" onclick="localStorage.setItem('iframeurl', './games/paperio2/index.html')">
+                <h2 class="black"><i class='bx bx-cloud'></i> Paper 2</h2>
             </div></a>
-            <a href="https://battledudes.io"><div class="card p battle">
-                <h2 class="white">Battle Dudes</h2>
+            <a href="./iframe.html"><div class="card p stack" onclick="localStorage.setItem('iframeurl', 'games/stack/index.html')">
+                <h2 class="white"><i class='bx bx-game'></i> Stack</h2>
             </div></a>
-            <a href="https://taming.io"><div class="card p taming">
-                <h2 class="white">Taming</h2>
+            <a href="./iframe.html"><div class="card p battle" onclick="localStorage.setItem('iframeurl', 'https://battledudes.io')">
+                <h2 class="white"><i class='bx bx-cloud'></i> Battle Dudes</h2>
             </div></a>
-            <a href="./games/rabbit-samurai/index.html"><div class="card p rabbit">
-                <h2 class="white">Rabbit Samurai</h2>
+            <a href="./iframe.html"><div class="card p taming" onclick="localStorage.setItem('iframeurl', 'https://taming.io')">
+                <h2 class="white"><i class='bx bx-cloud'></i> Taming</h2>
             </div></a>
-            <a href="./games/smashkarts/index.html"><div class="card p smash">
-                <h2 class="white">Smash
+            <a href="./iframe.html"><div class="card p smash" onclick="localStorage.setItem('iframeurl', 'games/smashkarts/index.html')">
+                <h2 class="white"><i class='bx bx-cloud'></i> Smash
                     Karts</h2>
             </div></a>
-            <a href="https://yohoho.io/"><div class="card p yohoho">
-                <h2 class="white">Yohoho</h2>
+            <a href="./iframe.html"><div class="card p yohoho" onclick="localStorage.setItem('iframeurl', 'https://yohoho.io/')">
+                <h2 class="white"><i class='bx bx-cloud'></i> Yohoho</h2>
             </div></a>
-            <a href="./games/Stickman-Hook-main/index.html"><div class="card p stick">
-                <h2 class="white">Stickman</h2>
+            <a href="./iframe.html"><div class="card p stabfish" onclick="localStorage.setItem('iframeurl', 'https://stabfish.io/')">
+                <h2 class="white"><i class='bx bx-cloud'></i> Stabfish</h2>
             </div></a>
-            <a href="./games/ms-edge-letssurf-main/index.html"><div class="card p surf">
-                <h2 class="white">Surf</h2>
+            <a href="./iframe.html"><div class="card p stick" onclick="localStorage.setItem('iframeurl', 'games/Stickman-Hook-main/index.html')">
+                <h2 class="white"><i class='bx bx-game'></i> Stickman</h2>
             </div></a>
-            <a href="https://jklm.fun"><div class="card p jklm">
-                <h2 class="white">Jklm</h2>
+            <a href="./iframe.html"><div class="card p surf" onclick="localStorage.setItem('iframeurl', 'games/ms-edge-letssurf-main/index.html')">
+                <h2 class="white"><i class='bx bx-game'></i> Surf</h2>
             </div></a>
-            <a href="https://lolbeans.io"><div class="card p beans">
-                <h2 class="white">LolBeans</h2>
+            <a href="./iframe.html"><div class="card p jklm" onclick="localStorage.setItem('iframeurl', 'https://jklm.fun')">
+                <h2 class="white"><i class='bx bx-cloud'></i> Jklm</h2>
             </div></a>
-            <a href="./games/motox3m/index.html"><div class="card p moto">
-                <h2 class="white">Moto 3XM</h2>
+            <a href="./iframe.html"><div class="card p beans" onclick="localStorage.setItem('iframeurl', 'https://lolbeans.io')">
+                <h2 class="white"><i class='bx bx-cloud'></i> LolBeans</h2>
             </div></a>
-            <a href="./games/btd4/index.html"><div class="card p bloons">
-                <h2 class="white">Bloons TD 4</h2>
+            <a href="./iframe.html"><div class="card p moto"  onclick="localStorage.setItem('iframeurl', 'games/motox3m/index.html')">
+                <h2 class="white"><i class='bx bx-game'></i> Moto 3XM</h2>
             </div></a>
-            <a href="https://littlealchemy2.com"><div class="card p littlealchemy2">
-                <h2 class="white">Little Alchemy 2</h2>
+            <a href="./iframe.html"><div class="card p bloons" onclick="localStorage.setItem('iframeurl', 'games/btd4/index.html')">
+                <h2 class="white"><i class='bx bx-game'></i> Bloons TD 4</h2>
             </div></a>
-            <a href="https://sandspiel.club"><div class="card p sand">
-                <h2 class="white">Sandspiel</h2>
+            <a href="./iframe.html"><div class="card p littlealchemy2" onclick="localStorage.setItem('iframeurl', 'https://littlealchemy2.com')">
+                <h2 class="white"><i class='bx bx-joystick'></i> Little Alchemy 2</h2>
             </div></a>
-            <a href="https://schoolbreak.io"><div class="card p school">
-                <h2 class="white">School
+            <a href="./iframe.html"><div class="card p sand" onclick="localStorage.setItem('iframeurl', 'https://sandspiel.club')">
+                <h2 class="white"><i class='bx bx-joystick'></i> Sandspiel</h2>
+            </div></a>
+            <a href="./iframe.html"><div class="card p school" onclick="localStorage.setItem('iframeurl', 'https://schoolbreak.io')">
+                <h2 class="white"><i class='bx bx-cloud'></i> School
                     Break</h2>
             </div></a>
-           
-            <a href="https://krunker.io/"><div class="card p krunker">
-                <h2 class="white">Krunker</h2>
+            <a href="./iframe.html"><div class="card p krunker" onclick="localStorage.setItem('iframeurl', 'https://krunker.io/')">
+                <h2 class="white"><i class='bx bx-cloud'></i> Krunker</h2>
             </div></a>
-            <a href="https://diep.io"><div class="card p diep">
-                <h2 class="white">Diep</h2>
+            <a href="./iframe.html"><div class="card p diep" onclick="localStorage.setItem('iframeurl', 'https://diep.io')">
+                <h2 class="white"><i class='bx bx-cloud'></i> Diep</h2>
+            </div></a>
+            <a href="./iframe.html"><div class="card p gartic" onclick="localStorage.setItem('iframeurl', 'https://gartic.io/')">
+                <h2 class="white"><i class='bx bx-cloud'></i> Gartic</h2>
+            </div></a>
+            <a href="./iframe.html"><div class="card p slither" onclick="localStorage.setItem('iframeurl', 'https://slither.io')">
+                <h2 class="white"><i class='bx bx-cloud'></i> Slither</h2>
+            </div></a>
+            <a href="./iframe.html"><div class="card p moomoo" onclick="localStorage.setItem('iframeurl', 'https://moomoo.io')">
+                <h2 class="white"><i class='bx bx-cloud'></i> Moomoo</h2>
             </div></a>
         </div>
         <div class="footer">
-            <div class="footer-text">GetTechno-V2/main 43bq263 &copy; GetTechno 2023</div>
+            <div class="footer-text">GetTechno-V2/main &copy; GetTechno 2023</div>
         </div>
     </section>
 
@@ -219,6 +236,8 @@
     <script src="./uv/uv.config.js"></script>
     <script src="./index.js"></script>
     <script>
+        document.getElementById("stylebg").style="background-image: url('./img/bg/" + localStorage.getItem('theme') + ".jpg')"
+
         if (localStorage.getItem("theme")===null){
             localStorage.setItem("theme", "light")
         }
