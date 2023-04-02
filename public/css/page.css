@@ -736,15 +736,12 @@ header .image-text .profession{
     height: 30px;
     
   }
-  
-  /* Hide default HTML checkbox */
   .switch input {
     opacity: 0;
     width: 0;
     height: 0;
   }
-  
-  /* The slider */
+
   .slider {
     position: absolute;
     cursor: pointer;
@@ -785,7 +782,6 @@ header .image-text .profession{
     transform: translateX(26px);
   }
   
-  /* Rounded sliders */
   .slider.round {
     border-radius: 34px;
   }
@@ -799,4 +795,25 @@ header .image-text .profession{
     margin-left: 10px;
     font-size: 15px;
     font-weight: 400;
+}
+.cards .pacman{
+    background-image: url("../img/games/pacman.jpg");
+}
+.cards .singing{
+    background-image: url("../img/cloud/singing.jpg");
+}
+.cards .defence{
+    background-image: url("../img/cloud/defence.png");
+}
+.cards .cookie{
+    background-image: url("../img/cloud/cookie.jpg");
+}
+.cards .vector{
+    background-image: url("../img/cloud/vector.jpg");
+}
+.cards .plague{
+    background-image: url("../img/cloud/plague.jpg");
+}
+.cards .retro{
+    background-image: url("../img/cloud/retro.jpg");
 }
