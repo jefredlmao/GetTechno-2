@@ -1,0 +1,30 @@
+.iframe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.iframe .DraggableDiv {
+    top: 10px;
+    background-color: #1f1e1e;
+    width: 200px;
+    height: 40px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    border-radius: 50px;
+    box-shadow: 4px 3px 8px 1px #96969633;
+  	-webkit-box-shadow: 4px 3px 8px 1px #96969633;
+}
+
+.iframe .DraggableDiv i {
+    color: white;
+    margin: 10px;
+}
+
+.iframe .DraggableDiv .panic {
+    color: #ee5d5d;
+}
