@@ -3,7 +3,8 @@
 
 <h1 align="center">GetTechno</h1>
 
-Cool website that I made. French website. Custom website for my school so only youtube and snapchat are proxied
+Cool french website that I made for my school.
+Since their firewall is shit not all website are being proxied
 
 https://webincog.tk
 
