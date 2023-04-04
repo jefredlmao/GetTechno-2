@@ -703,7 +703,7 @@ header .image-text .profession{
 .iframe .DraggableDiv {
     top: 10px;
     background-color: var(--body-color);
-    width: 230px;
+    width: 200px;
     height: 43px;
     position: fixed;
     display: flex;
