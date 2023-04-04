@@ -359,15 +359,16 @@ video {
     box-shadow: 4px 3px 8px 1px #96969633;
   	-webkit-box-shadow: 4px 3px 8px 1px #96969633;
 }
-.activite .activity {
+.activite .activity a{
     margin-left: 25px;
     display: flex;
+    align-items: center;
 }
 .activite .activity .appname{
     margin-left: 25px;
-    margin-top: 25px;
     font-size: 20px;
-    color: transparent;
+    font-weight: 500;
+    color: var(--widget-text);
 
 }
 .activite .activity .imgcont {
