@@ -701,12 +701,12 @@ header .image-text .profession{
 }
 
 .iframe .DraggableDiv {
-    top: 10px;
+    top: 35px;
     background-color: var(--body-color);
     width: 200px;
     height: 43px;
     position: fixed;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     z-index: 200;
@@ -719,6 +719,23 @@ header .image-text .profession{
     color: var(--primary-color);
     margin: 11px;
     font-size: 19px;
+}
+
+.iframe button {
+    z-index: 300;
+    background-color: var(--body-color);
+    color: var(--primary-color);
+    border: 0;
+    top: -10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 4px 3px 8px 1px #96969633;
+  	-webkit-box-shadow: 4px 3px 8px 1px #96969633;
 }
 
 .iframe .DraggableDiv .panic {

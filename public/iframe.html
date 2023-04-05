@@ -22,6 +22,7 @@
 <body>
     <div class="iframe">
         <iframe id="iframeurl" src="" style="border: 0; height: 100vh; left: 0; position: fixed; top: 0; width: 100%;"></iframe>
+        <button id="button"><i class='bx bxs-cog'></i></button>
         <div class="DraggableDiv" id="DraggableDiv1">
             <a href="./menu.html"><i class='bx bxl-google'></i></a>
             <a id="external" href=""><i class='bx bx-link-external'></i></a>
@@ -30,6 +31,17 @@
         
         </div>
         <script>
+            var button = document.getElementById('button'); // Assumes element with id='button'
+
+button.onclick = function() {
+    var div = document.getElementById('DraggableDiv1');
+    if (div.style.display !== 'none') {
+        div.style.display = 'none';
+    }
+    else {
+        div.style.display = 'flex';
+    }
+};
             document.getElementById("iframeurl").src=(localStorage.getItem('iframeurl'))
             document.getElementById("external").href=(localStorage.getItem('iframeurl'))
         </script>
@@ -104,7 +116,7 @@
         document.getElementById("themestyle").setAttribute("href", `css/${localStorage.getItem("theme")}.css`);
     </script>
     <script>
-        $("iframe").nodoubletapzoom();
+        $("body").nodoubletapzoom();
     </script>
 
 </body>
