@@ -54,6 +54,6 @@ setauto()
 
 function setauto() {
     if (localStorage.getItem('tchatname')===null){
-        localStorage.setItem('tchatname', 'false')
+        localStorage.setItem('tchatname', 'true')
     }
 }

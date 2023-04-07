@@ -31,7 +31,7 @@
         
         </div>
         <script>
-            var button = document.getElementById('button'); // Assumes element with id='button'
+            var button = document.getElementById('button');
 
 button.onclick = function() {
     var div = document.getElementById('DraggableDiv1');
@@ -52,10 +52,8 @@ button.onclick = function() {
                 channel: '1087008199363805345',
                 glyph: ['./img/widgetbot.png', '100%'],
                 location: [10, -150],
+                username: localStorage.getItem('nickname')
                 })
-                if (localStorage.getItem('tchatname')==='true'){
-                    discord.options.username=localStorage.getItem('nickname')
-                }
             }else{
                 if (localStorage.getItem('chatpos')==="bottomright"){
                 const discord = new Crate({
@@ -63,10 +61,8 @@ button.onclick = function() {
                 channel: '1087008199363805345',
                 glyph: ['./img/widgetbot.png', '100%'],
                 location: [200, -10],
+                username: localStorage.getItem('nickname')
                 })
-                if (localStorage.getItem('tchatname')==='true'){
-                    discord.options.username=localStorage.getItem('nickname')
-                }
             }else{
                 if (localStorage.getItem('chatpos')==="topleft"){
                 const discord = new Crate({
@@ -74,10 +70,8 @@ button.onclick = function() {
                 channel: '1087008199363805345',
                 glyph: ['./img/widgetbot.png', '100%'],
                 location: [10, 150],
+                username: localStorage.getItem('nickname')
                 })
-                if (localStorage.getItem('tchatname')==='true'){
-                    discord.options.username=localStorage.getItem('nickname')
-                }
             }else{
                 if (localStorage.getItem('chatpos')==="bottomleft"){
                 const discord = new Crate({
@@ -85,19 +79,15 @@ button.onclick = function() {
                 channel: '1087008199363805345',
                 glyph: ['./img/widgetbot.png', '100%'],
                 location: [200, 10],
+                username: localStorage.getItem('nickname')
                 })
-                if (localStorage.getItem('tchatname')==='true'){
-                    discord.options.username=localStorage.getItem('nickname')
-                }
             }else{
                 const discord = new Crate({
                 server: '1086990232349581434',
                 channel: '1087008199363805345',
                 glyph: ['./img/widgetbot.png', '100%'],
+                username: localStorage.getItem('nickname')
                 })
-                if (localStorage.getItem('tchatname')==='true'){
-                    discord.options.username=localStorage.getItem('nickname')
-                }
             }
         }
             }

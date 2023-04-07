@@ -703,8 +703,8 @@ header .image-text .profession{
 .iframe .DraggableDiv {
     top: 35px;
     background-color: var(--body-color);
-    width: 200px;
-    height: 43px;
+    width: 250px;
+    height: 47px;
     position: fixed;
     display: none;
     justify-content: center;
@@ -717,8 +717,8 @@ header .image-text .profession{
 
 .iframe .DraggableDiv i {
     color: var(--primary-color);
-    margin: 11px;
-    font-size: 19px;
+    margin: 13px;
+    font-size: 24px;
 }
 
 .iframe button {
@@ -841,3 +841,6 @@ header .image-text .profession{
     background-image: url("../img/apps/speedtest.png");
 }
 
+.iframe {
+    height: -webkit-fill-available;
+}

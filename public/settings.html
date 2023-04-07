@@ -187,22 +187,6 @@
                 }
                 initposSelector();
              </script>
-             <br><br>
-             <label class="switch">
-                <input type="checkbox" id="checkswitch" onclick="checkswitch()" checked>
-                <span class="slider round"></span>
-              </label>
-              <label class="textset">Nom d'utilisateur appliqué automatiquement dans le tchat</label>
-              <script>
-                function checkswitch() {
-                    var checkBox = document.getElementById("checkswitch");
-                    if (checkBox.checked == true){
-                        localStorage.setItem('tchatname', 'true')
-                    } else {
-                        localStorage.setItem('tchatname', 'false')
-                    }
-                }
-              </script>
               <br>
               <br>
              <h4>Ouvrir une URL :</h4>
