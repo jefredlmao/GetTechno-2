@@ -690,7 +690,7 @@ header .image-text .profession{
     background-image: url("../img/apps/duckduckgo.png");
 }
 .cards .aternos{
-    background-image: url("../img/apps/aternos.jpg");
+    background-image: url("../img/apps/magmanode.png");
 }
 
 
@@ -839,4 +839,8 @@ header .image-text .profession{
 }
 .cards .speedtest{
     background-image: url("../img/apps/speedtest.png");
+}
+
+.iframe {
+    height: -webkit-fill-available;
 }
