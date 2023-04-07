@@ -840,7 +840,3 @@ header .image-text .profession{
 .cards .speedtest{
     background-image: url("../img/apps/speedtest.png");
 }
-
-.iframe {
-    height: -webkit-fill-available;
-}
