@@ -703,7 +703,7 @@ header .image-text .profession{
 .iframe .DraggableDiv {
     top: 35px;
     background-color: var(--body-color);
-    width: 250px;
+    width: 225px;
     height: 47px;
     position: fixed;
     display: none;
@@ -839,4 +839,10 @@ header .image-text .profession{
 }
 .cards .speedtest{
     background-image: url("../img/apps/speedtest.png");
+}
+.cards .outlook{
+    background-image: url("../img/apps/outlook.jpg");
+}
+.cards .cloudfare{
+    background-image: url("../img/apps/cloudfare.jpg");
 }
